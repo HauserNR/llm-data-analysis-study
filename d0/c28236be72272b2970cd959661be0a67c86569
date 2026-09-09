@@ -1,0 +1,14 @@
+blob/main/chapter01/chapter01.md
+  h_1d71b0cb0e6060 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "d0c28236be72272b2970cd959661be0a67c86569",
+  "prompts": {},
+  "humans": {
+    "h_1d71b0cb0e6060": {
+      "author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
