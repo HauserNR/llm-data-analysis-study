@@ -94,24 +94,58 @@ https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter01/chapter0
 ### 데이터 연결 관계
 
 ```text
-필요한 PK/FK 관계 또는 파일 연결 관계를 작성하세요.
+customers.customer_id
+        ↓
+orders.customer_id
+
+orders.order_id
+        ↓
+order_items.order_id
+
+products.product_id
+        ↓
+order_items.product_id
 ```
 
 ### 결과 관찰
 
-질문에 답하기 위해 어떤 데이터가 필요하다는 사실을 확인했는지 작성하세요.
+실제 CSV 파일을 확인한 결과, customers.csv에는 150명의 고객 정보가 있으며 customer_id가 존재한다.
+orders.csv에는 300건의 주문과 order_id, customer_id, order_date, order_status 컬럼이 존재한다.
+order_items.csv에는 764개의 주문 상세 행이 있으며 order_id, product_id를 통해 주문과 상품을 연결할 수 있다.
+products.csv에는 100개의 상품과 product_id, category 컬럼이 존재한다.
+
+네 파일의 주요 ID 컬럼은 중복 없이 식별자로 사용할 수 있었고,
+orders.customer_id → customers.customer_id, order_items.order_id → orders.order_id,
+order_items.product_id → products.product_id 연결에서도 참조되지 않는 값은 확인되지 않았다.
+또한 네 파일의 컬럼에서 결측값도 확인되지 않았다.
+
+orders.csv의 전체 주문 기간은 2025-07-09부터 2026-07-08까지이며,
+주문 상태는 completed, cancelled, refunded 세 종류이다.
+이 중 실제 구매 행동을 분석하기 위해 completed 주문만 사용하면 184건이며,
+completed 주문의 기간은 2025-07-09부터 2026-07-05까지이다.
 
 ### 나의 해석과 판단
 
-현재 데이터만으로 질문에 답할 수 있는지 판단하세요.
+질문에 필요한 고객 식별 정보, 주문 날짜, 주문 상태, 상품 ID와 상품 카테고리 정보가 모두 실제 데이터에 존재하므로
+현재 데이터만으로 재구매 분석을 수행할 수 있다고 판단했다.
+
+다만 취소되거나 환불된 주문을 재구매로 포함하면 실제 구매 행동을 과대평가할 수 있으므로
+재구매 판단에는 order_status = completed인 주문만 사용하는 것이 적절하다고 판단했다.
+또한 재구매 횟수는 한 주문에서 여러 개를 구매한 수량이 아니라 서로 다른 주문 시점을 기준으로 계산하는 것이 적절하다고 생각했다.
 
 ### 업무·분석적 의미
 
-질문과 데이터 구조를 먼저 연결하는 것이 왜 중요한지 작성하세요.
+질문을 실제 데이터 구조와 연결해보면서 재구매율을 계산하려면 단순히 고객과 주문 데이터만 보는 것이 아니라
+주문 상세와 상품 카테고리 데이터까지 함께 연결해야 한다는 점을 확인할 수 있었다.
+이 과정을 먼저 수행하면 필요한 데이터가 실제로 존재하는지 검증한 뒤 분석을 시작할 수 있어
+잘못된 컬럼이나 가정을 바탕으로 분석하는 문제를 줄일 수 있다.
 
 ### 한계와 추가 확인 사항
 
-실제 컬럼 존재 여부, 타입, 결측 등 아직 확인하지 못한 부분을 작성하세요.
+1.“첫 구매”는 고객의 최초 completed 주문으로 정의할 필요가 있다.
+2.“2회 이상 구매”가 첫 구매를 포함한 총 2회인지, 첫 구매 이후 추가로 2회 이상인지 명확한 계산 정의가 필요하다.
+3.최근 3개월과 이전 3개월을 비교할 때 각 고객에게 첫 구매 후 30일의 관찰 기간이 동일하게 확보되어야 한다.
+4.데이터의 마지막 completed 주문일이 2026-07-05이므로, 30일의 후속 구매 기간을 완전히 관찰하려면 최근 비교 구간의 종료일을 2026-06-05 이전으로 설정해야 한다.
 
 ### Evidence
 
