@@ -381,25 +381,31 @@ import seaborn as sns
 
 DATA_DIR = Path('../data/raw')
 sns.set_theme(style='whitegrid')
+
+orders = pd.read_csv(DATA_DIR / 'orders.csv')
+print(orders.head())
 ```
 
 #### 실행 결과
 
 ```text
-오류 없이 실행되었는지 작성하세요.
+orders.csv 파일이 정상적으로 불러와졌고, 상위 5개 행이 오류 없이 출력되는 것을 확인했다.
 ```
 
 #### 결과 관찰
 
-실행 결과에서 확인한 사실을 작성하세요.
+orders.csv를 직접 불러와 앞부분을 출력한 결과, 주문 데이터를 정상적으로 읽을 수 있다는 것을 확인했다.
+이후 재구매 분석에 필요한 주문 관련 데이터를 Python에서 사용할 수 있는 상태임을 확인했다.
 
 #### 나의 해석과 판단
 
-현재 Notebook이 본격 분석이 아니라 starter scaffold라는 의미를 자신의 말로 설명하세요.
+Chapter 01 Notebook은 본격적인 데이터 분석을 수행하는 단계라기보다 Python 환경과 데이터 파일 경로가 정상적으로 설정되어 있는지 확인하는 starter scaffold라고 이해했다.
+이번 단계에서는 재구매 분석에 필요한 orders.csv를 직접 읽어 출력해보는 것으로 다음 Chapter에서 실제 분석을 진행할 준비가 되었는지 확인했다.
 
 #### 한계와 추가 확인 사항
 
-Chapter 02 또는 Chapter 03에서 추가로 확인해야 할 내용을 작성하세요.
+현재는 orders.csv를 정상적으로 불러오는 것까지만 확인했다.
+다음 Chapter에서는 order_items.csv, products.csv, customers.csv도 함께 불러와 파일 간 연결 관계와 실제 컬럼 구조를 확인하고 재구매 분석을 진행할 필요가 있다.
 
 #### Evidence
 
@@ -482,11 +488,11 @@ https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter01/chapter0
 ### 내가 가장 중요하게 내린 판단 1개
 
 ```text
-여기에 작성하세요.
+30일 재구매율을 기간별로 공정하게 비교하려면 모든 고객에게 동일한 30일 관찰 기간을 확보해야 하므로, 데이터의 마지막 completed 주문일을 기준으로 최근 비교 구간의 종료일을 30일 앞당겨야 한다고 판단했다.
 ```
 
 ### 아직 확인이 필요한 내용 1개
 
 ```text
-여기에 작성하세요.
+최근 3개월의 첫 구매 고객이 8명으로 표본이 작기 때문에, 더 긴 분석 기간이나 다른 재구매 기준에서도 동일한 변화가 나타나는지 추가 확인이 필요하다.
 ```
