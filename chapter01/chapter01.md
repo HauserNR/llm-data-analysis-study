@@ -77,10 +77,10 @@ https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter01/chapter0
 
 ### 필요한 데이터 파일
 
-- [ ] `customers.csv`
-- [ ] `products.csv`
-- [ ] `orders.csv`
-- [ ] `order_items.csv`
+- [x] `customers.csv`
+- [x] `products.csv`
+- [x] `orders.csv`
+- [x] `order_items.csv`
 
 ### 필요한 컬럼 후보
 
