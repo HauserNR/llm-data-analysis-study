@@ -1,0 +1,19 @@
+chapter01/chapter01.md
+  s_ed2e4d15c40775::t_78528f71b0f64d 89-92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "79860ad56b1fd6cffc3b97884e17342501ebfbe3",
+  "prompts": {},
+  "sessions": {
+    "s_ed2e4d15c40775": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "44aa342d-d922-48e3-89a8-725258e7151c",
+        "model": "claude-opus-5"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
