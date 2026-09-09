@@ -1,0 +1,20 @@
+chapter01/chapter01.md
+  s_ed2e4d15c40775::t_d515549692b31c 97-99,101-103,105-107
+  s_ed2e4d15c40775::t_4b2a0fd3b56394 100,104
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.2",
+  "base_commit_sha": "341acd5912bb1cb6283e5e9be2952c3386f2091e",
+  "prompts": {},
+  "sessions": {
+    "s_ed2e4d15c40775": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "44aa342d-d922-48e3-89a8-725258e7151c",
+        "model": "unknown"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
