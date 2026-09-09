@@ -86,9 +86,10 @@ https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter01/chapter0
 
 | 파일 | 필요한 컬럼 | 필요한 이유 |
 | --- | --- | --- |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| `customers.csv` | `customer_id` | 고객을 식별하고 주문 데이터와 연결하기 위해 필요 |
+| `orders.csv` | `order_id`, `customer_id`, `order_date`, `order_status` | 고객별 최초 구매일, 이후 주문일, completed 주문 여부를 확인하기 위해 필요 |
+| `order_items.csv` | `order_id`, `product_id` | 각 주문에 포함된 상품을 확인하고 동일 상품의 반복 구매 여부를 판단하기 위해 필요 |
+| `products.csv` | `product_id`, `category` | 상품과 카테고리를 연결하여 동일 카테고리 상품의 반복 구매 여부를 판단하기 위해 필요 |
 
 ### 데이터 연결 관계
 
