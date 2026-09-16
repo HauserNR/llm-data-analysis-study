@@ -1,0 +1,19 @@
+.gitignore
+  s_96d1662d06b11c::t_270fbd835f58bf 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "4bcbd247c84b303c11c98f140885e4ea99211e53",
+  "prompts": {},
+  "sessions": {
+    "s_96d1662d06b11c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9b5d8dd6-30aa-4578-93c1-cce4b5fff30c",
+        "model": "claude-opus-5"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
