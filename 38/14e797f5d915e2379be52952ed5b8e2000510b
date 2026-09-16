@@ -1,0 +1,79 @@
+.gitignore
+  s_96d1662d06b11c::t_4bf2e9d7c3b1b4 5
+data/raw/customers.csv
+  s_96d1662d06b11c::t_5f98d6c787f241 1-151
+data/raw/products.csv
+  s_96d1662d06b11c::t_5f98d6c787f241 1-101
+chapter02/chapter02.md
+  s_3250aa395e1d6b::t_0c60bbe190b038 16,33-34,43,47,51,55,63-64,88-90,94,98,122,126,130,141,151,155,159,163,174,179-181,185-187,192,201,205,211-214,224,233,239,244-246,251,259-260,263
+  s_3250aa395e1d6b::t_36c627b8846848 65-67
+  s_3250aa395e1d6b::t_c41793739c635d 139-140
+  s_3250aa395e1d6b::t_c7e9aa739af0b2 142
+  s_3250aa395e1d6b::t_bfdf360e2e4313 258
+  s_3250aa395e1d6b::t_b3af1e6eb11528 261-262
+  s_96d1662d06b11c::t_b9ccf28ac58a19 72-75,84,107-109,118
+data/raw/order_items.csv
+  s_96d1662d06b11c::t_5f98d6c787f241 1-765
+data/raw/orders.csv
+  s_96d1662d06b11c::t_5f98d6c787f241 1-301
+notebooks/ch01_ai_data_analysis_intro.ipynb
+  s_96d1662d06b11c::t_5b35f967d9a919 1
+notebooks/ch02_environment_setup.ipynb
+  s_96d1662d06b11c::t_90de652dd83ed4 1-309
+notebooks/ch03_data_overview.ipynb
+  s_96d1662d06b11c::t_b32635fb280f24 1-1124
+notebooks/ch04_pandas_basic.ipynb
+  s_96d1662d06b11c::t_7ef2b521a465a2 1-497
+notebooks/ch05_data_preprocessing.ipynb
+  s_96d1662d06b11c::t_5da6892b58b8cb 1-1042
+notebooks/ch06_eda_questions.ipynb
+  s_96d1662d06b11c::t_73d664d66a293c 1-953
+notebooks/ch07_visualization.ipynb
+  s_96d1662d06b11c::t_a86fea63a38347 1-836
+notebooks/ch08_midterm_project.ipynb
+  s_96d1662d06b11c::t_61ed6220852702 1-498
+notebooks/ch09_llm_prompt_analysis.ipynb
+  s_96d1662d06b11c::t_7f5727374cf7e3 1-48
+notebooks/ch09_regression_analysis.ipynb
+  s_96d1662d06b11c::t_5bfa79efb0cef7 1-592
+notebooks/ch10_llm_code_generation.ipynb
+  s_96d1662d06b11c::t_5586430b152df4 1-497
+notebooks/ch11_llm_prompt_analysis.ipynb
+  s_96d1662d06b11c::t_1f4c44a0277490 1-342
+notebooks/ch12_report_generation.ipynb
+  s_96d1662d06b11c::t_2007a9b96b1a38 1-464
+notebooks/ch13_external_data_collection.ipynb
+  s_96d1662d06b11c::t_c2dddc039c7678 1-395
+notebooks/ch14_airflow_pipeline.ipynb
+  s_96d1662d06b11c::t_78923ccdb1c29a 1-404
+notebooks/ch15_final_project.ipynb
+  s_96d1662d06b11c::t_5fd0f2590c0dde 1-390
+requirements.txt
+  s_96d1662d06b11c::t_209fc84aa95500 1-21
+scripts/generate_sample_data.py
+  s_96d1662d06b11c::t_32f022edd196ce 1-130
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "3814e797f5d915e2379be52952ed5b8e2000510b",
+  "prompts": {},
+  "sessions": {
+    "s_3250aa395e1d6b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0aa1e-e0bf-7ed0-a097-8236f73405b8",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    },
+    "s_96d1662d06b11c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9b5d8dd6-30aa-4578-93c1-cce4b5fff30c",
+        "model": "claude-opus-5"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
