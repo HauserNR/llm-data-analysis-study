@@ -1,0 +1,19 @@
+chapter02/chapter02.md
+  s_96d1662d06b11c::t_77d3d6d1ab271f 1-260
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "a8042b27ed59cf1dbd3ab94b6affb2cc50f83550",
+  "prompts": {},
+  "sessions": {
+    "s_96d1662d06b11c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9b5d8dd6-30aa-4578-93c1-cce4b5fff30c",
+        "model": "unknown"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
