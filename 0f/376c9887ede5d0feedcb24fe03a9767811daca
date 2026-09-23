@@ -1,0 +1,25 @@
+chapter03/chapter03_codex.md
+  s_9718d5db1b2ede::t_e7dd40a9b42faa 1-272
+chapter03/chapter03.ipynb
+  s_9718d5db1b2ede::t_64343324d614fe 1-6736
+chapter03/execution_results.json
+  s_9718d5db1b2ede::t_08c8954d5f474f 2-197,199-253,255-261,264-270,273-279,282-291,293-295,298-300,303-305,308-310,313-318,320-321,324-325,328-329,332-333,336-337,340-341,344-345,348-349,352-356,358-367,370-379,382-391,394-406,408-409,412-413,416-417,420-421,424-425,428-429,431-433,435
+chapter03/safe_context.json
+  s_9718d5db1b2ede::t_13e6ac8cad48dd 2-216,218-222,225-229,232-236,238-239
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "0f376c9887ede5d0feedcb24fe03a9767811daca",
+  "prompts": {},
+  "sessions": {
+    "s_9718d5db1b2ede": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0ce0e-c53e-7f61-8c8e-aaad015e772c",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
