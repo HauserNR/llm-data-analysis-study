@@ -1,0 +1,14 @@
+chapter03/chapter03.ipynb
+  h_1d71b0cb0e6060 1936,1998,2017,2084,2136,3064-3075
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "a4b67da5cf13add604caa7fc8848bdbebebebd2f",
+  "prompts": {},
+  "humans": {
+    "h_1d71b0cb0e6060": {
+      "author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
