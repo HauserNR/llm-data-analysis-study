@@ -1,0 +1,239 @@
+{
+  "datasets": [
+    {
+      "dataset": "customers",
+      "shape": [
+        150,
+        6
+      ],
+      "columns": [
+        "customer_id",
+        "name",
+        "gender",
+        "age",
+        "city",
+        "signup_date"
+      ],
+      "dtypes": {
+        "customer_id": "int64",
+        "name": "str",
+        "gender": "str",
+        "age": "int64",
+        "city": "str",
+        "signup_date": "str"
+      },
+      "missing": {
+        "customer_id": 0,
+        "name": 0,
+        "gender": 0,
+        "age": 0,
+        "city": 0,
+        "signup_date": 0
+      },
+      "missing_rate_pct": {
+        "customer_id": 0.0,
+        "name": 0.0,
+        "gender": 0.0,
+        "age": 0.0,
+        "city": 0.0,
+        "signup_date": 0.0
+      },
+      "primary_key": "customer_id",
+      "key_missing": 0,
+      "key_duplicates": 0,
+      "duplicate_rows": 0
+    },
+    {
+      "dataset": "products",
+      "shape": [
+        100,
+        4
+      ],
+      "columns": [
+        "product_id",
+        "product_name",
+        "category",
+        "price"
+      ],
+      "dtypes": {
+        "product_id": "int64",
+        "product_name": "str",
+        "category": "str",
+        "price": "int64"
+      },
+      "missing": {
+        "product_id": 0,
+        "product_name": 0,
+        "category": 0,
+        "price": 0
+      },
+      "missing_rate_pct": {
+        "product_id": 0.0,
+        "product_name": 0.0,
+        "category": 0.0,
+        "price": 0.0
+      },
+      "primary_key": "product_id",
+      "key_missing": 0,
+      "key_duplicates": 0,
+      "duplicate_rows": 0
+    },
+    {
+      "dataset": "orders",
+      "shape": [
+        300,
+        5
+      ],
+      "columns": [
+        "order_id",
+        "customer_id",
+        "order_date",
+        "payment_method",
+        "order_status"
+      ],
+      "dtypes": {
+        "order_id": "int64",
+        "customer_id": "int64",
+        "order_date": "str",
+        "payment_method": "str",
+        "order_status": "str"
+      },
+      "missing": {
+        "order_id": 0,
+        "customer_id": 0,
+        "order_date": 0,
+        "payment_method": 0,
+        "order_status": 0
+      },
+      "missing_rate_pct": {
+        "order_id": 0.0,
+        "customer_id": 0.0,
+        "order_date": 0.0,
+        "payment_method": 0.0,
+        "order_status": 0.0
+      },
+      "primary_key": "order_id",
+      "key_missing": 0,
+      "key_duplicates": 0,
+      "duplicate_rows": 0
+    },
+    {
+      "dataset": "order_items",
+      "shape": [
+        764,
+        5
+      ],
+      "columns": [
+        "order_item_id",
+        "order_id",
+        "product_id",
+        "quantity",
+        "unit_price"
+      ],
+      "dtypes": {
+        "order_item_id": "int64",
+        "order_id": "int64",
+        "product_id": "int64",
+        "quantity": "int64",
+        "unit_price": "int64"
+      },
+      "missing": {
+        "order_item_id": 0,
+        "order_id": 0,
+        "product_id": 0,
+        "quantity": 0,
+        "unit_price": 0
+      },
+      "missing_rate_pct": {
+        "order_item_id": 0.0,
+        "order_id": 0.0,
+        "product_id": 0.0,
+        "quantity": 0.0,
+        "unit_price": 0.0
+      },
+      "primary_key": "order_item_id",
+      "key_missing": 0,
+      "key_duplicates": 0,
+      "duplicate_rows": 0
+    }
+  ],
+  "category_counts": {
+    "customers.gender": {
+      "F": 84,
+      "M": 66
+    },
+    "customers.city": {
+      "성남": 21,
+      "광주": 17,
+      "부산": 16,
+      "대구": 15,
+      "서울": 15,
+      "울산": 14,
+      "인천": 14,
+      "대전": 14,
+      "수원": 13,
+      "고양": 11
+    },
+    "products.category": {
+      "스포츠": 19,
+      "전자기기": 17,
+      "생활용품": 16,
+      "뷰티": 16,
+      "도서": 14,
+      "패션": 11,
+      "식품": 7
+    },
+    "orders.payment_method": {
+      "kakao_pay": 79,
+      "naver_pay": 77,
+      "bank_transfer": 74,
+      "card": 70
+    },
+    "orders.order_status": {
+      "completed": 184,
+      "cancelled": 64,
+      "refunded": 52
+    }
+  },
+  "dates": [
+    {
+      "column": "customers.signup_date",
+      "original_missing": 0,
+      "conversion_failures": 0,
+      "min": "2023-09-22",
+      "max": "2026-09-11",
+      "future": 0
+    },
+    {
+      "column": "orders.order_date",
+      "original_missing": 0,
+      "conversion_failures": 0,
+      "min": "2025-09-15",
+      "max": "2026-09-15",
+      "future": 0
+    }
+  ],
+  "relationships": [
+    {
+      "relationship": "orders.customer_id -> customers.customer_id",
+      "missing_fk": 0,
+      "unknown_ids": [],
+      "unknown_unique": 0,
+      "invalid_rows": 0
+    },
+    {
+      "relationship": "order_items.order_id -> orders.order_id",
+      "missing_fk": 0,
+      "unknown_ids": [],
+      "unknown_unique": 0,
+      "invalid_rows": 0
+    },
+    {
+      "relationship": "order_items.product_id -> products.product_id",
+      "missing_fk": 0,
+      "unknown_ids": [],
+      "unknown_unique": 0,
+      "invalid_rows": 0
+    }
+  ]
+}

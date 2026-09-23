@@ -1,0 +1,436 @@
+{
+  "safe_context": {
+    "datasets": [
+      {
+        "dataset": "customers",
+        "shape": [
+          150,
+          6
+        ],
+        "columns": [
+          "customer_id",
+          "name",
+          "gender",
+          "age",
+          "city",
+          "signup_date"
+        ],
+        "dtypes": {
+          "customer_id": "int64",
+          "name": "str",
+          "gender": "str",
+          "age": "int64",
+          "city": "str",
+          "signup_date": "str"
+        },
+        "missing": {
+          "customer_id": 0,
+          "name": 0,
+          "gender": 0,
+          "age": 0,
+          "city": 0,
+          "signup_date": 0
+        },
+        "missing_rate_pct": {
+          "customer_id": 0.0,
+          "name": 0.0,
+          "gender": 0.0,
+          "age": 0.0,
+          "city": 0.0,
+          "signup_date": 0.0
+        },
+        "primary_key": "customer_id",
+        "key_missing": 0,
+        "key_duplicates": 0,
+        "duplicate_rows": 0
+      },
+      {
+        "dataset": "products",
+        "shape": [
+          100,
+          4
+        ],
+        "columns": [
+          "product_id",
+          "product_name",
+          "category",
+          "price"
+        ],
+        "dtypes": {
+          "product_id": "int64",
+          "product_name": "str",
+          "category": "str",
+          "price": "int64"
+        },
+        "missing": {
+          "product_id": 0,
+          "product_name": 0,
+          "category": 0,
+          "price": 0
+        },
+        "missing_rate_pct": {
+          "product_id": 0.0,
+          "product_name": 0.0,
+          "category": 0.0,
+          "price": 0.0
+        },
+        "primary_key": "product_id",
+        "key_missing": 0,
+        "key_duplicates": 0,
+        "duplicate_rows": 0
+      },
+      {
+        "dataset": "orders",
+        "shape": [
+          300,
+          5
+        ],
+        "columns": [
+          "order_id",
+          "customer_id",
+          "order_date",
+          "payment_method",
+          "order_status"
+        ],
+        "dtypes": {
+          "order_id": "int64",
+          "customer_id": "int64",
+          "order_date": "str",
+          "payment_method": "str",
+          "order_status": "str"
+        },
+        "missing": {
+          "order_id": 0,
+          "customer_id": 0,
+          "order_date": 0,
+          "payment_method": 0,
+          "order_status": 0
+        },
+        "missing_rate_pct": {
+          "order_id": 0.0,
+          "customer_id": 0.0,
+          "order_date": 0.0,
+          "payment_method": 0.0,
+          "order_status": 0.0
+        },
+        "primary_key": "order_id",
+        "key_missing": 0,
+        "key_duplicates": 0,
+        "duplicate_rows": 0
+      },
+      {
+        "dataset": "order_items",
+        "shape": [
+          764,
+          5
+        ],
+        "columns": [
+          "order_item_id",
+          "order_id",
+          "product_id",
+          "quantity",
+          "unit_price"
+        ],
+        "dtypes": {
+          "order_item_id": "int64",
+          "order_id": "int64",
+          "product_id": "int64",
+          "quantity": "int64",
+          "unit_price": "int64"
+        },
+        "missing": {
+          "order_item_id": 0,
+          "order_id": 0,
+          "product_id": 0,
+          "quantity": 0,
+          "unit_price": 0
+        },
+        "missing_rate_pct": {
+          "order_item_id": 0.0,
+          "order_id": 0.0,
+          "product_id": 0.0,
+          "quantity": 0.0,
+          "unit_price": 0.0
+        },
+        "primary_key": "order_item_id",
+        "key_missing": 0,
+        "key_duplicates": 0,
+        "duplicate_rows": 0
+      }
+    ],
+    "category_counts": {
+      "customers.gender": {
+        "F": 84,
+        "M": 66
+      },
+      "customers.city": {
+        "성남": 21,
+        "광주": 17,
+        "부산": 16,
+        "대구": 15,
+        "서울": 15,
+        "울산": 14,
+        "인천": 14,
+        "대전": 14,
+        "수원": 13,
+        "고양": 11
+      },
+      "products.category": {
+        "스포츠": 19,
+        "전자기기": 17,
+        "생활용품": 16,
+        "뷰티": 16,
+        "도서": 14,
+        "패션": 11,
+        "식품": 7
+      },
+      "orders.payment_method": {
+        "kakao_pay": 79,
+        "naver_pay": 77,
+        "bank_transfer": 74,
+        "card": 70
+      },
+      "orders.order_status": {
+        "completed": 184,
+        "cancelled": 64,
+        "refunded": 52
+      }
+    },
+    "dates": [
+      {
+        "column": "customers.signup_date",
+        "original_missing": 0,
+        "conversion_failures": 0,
+        "min": "2023-09-22",
+        "max": "2026-09-11",
+        "future": 0
+      },
+      {
+        "column": "orders.order_date",
+        "original_missing": 0,
+        "conversion_failures": 0,
+        "min": "2025-09-15",
+        "max": "2026-09-15",
+        "future": 0
+      }
+    ],
+    "relationships": [
+      {
+        "relationship": "orders.customer_id -> customers.customer_id",
+        "missing_fk": 0,
+        "unknown_ids": [],
+        "unknown_unique": 0,
+        "invalid_rows": 0
+      },
+      {
+        "relationship": "order_items.order_id -> orders.order_id",
+        "missing_fk": 0,
+        "unknown_ids": [],
+        "unknown_unique": 0,
+        "invalid_rows": 0
+      },
+      {
+        "relationship": "order_items.product_id -> products.product_id",
+        "missing_fk": 0,
+        "unknown_ids": [],
+        "unknown_unique": 0,
+        "invalid_rows": 0
+      }
+    ]
+  },
+  "extra": {
+    "orders_before_signup": 48,
+    "orders_before_signup_pct": 16.0,
+    "items_merge_before": 764,
+    "items_merge_after": 764,
+    "min_items_per_order": 1,
+    "max_items_per_order": 4,
+    "customers_without_orders": 24,
+    "nonpositive_price": 0,
+    "nonpositive_quantity": 0,
+    "nonpositive_unit_price": 0
+  },
+  "quality": [
+    {
+      "dataset": "customers",
+      "key": "customer_id",
+      "rows": 150,
+      "missing": 0,
+      "duplicates": 0,
+      "unique": 150,
+      "duplicate_rows": 0
+    },
+    {
+      "dataset": "products",
+      "key": "product_id",
+      "rows": 100,
+      "missing": 0,
+      "duplicates": 0,
+      "unique": 100,
+      "duplicate_rows": 0
+    },
+    {
+      "dataset": "orders",
+      "key": "order_id",
+      "rows": 300,
+      "missing": 0,
+      "duplicates": 0,
+      "unique": 300,
+      "duplicate_rows": 0
+    },
+    {
+      "dataset": "order_items",
+      "key": "order_item_id",
+      "rows": 764,
+      "missing": 0,
+      "duplicates": 0,
+      "unique": 764,
+      "duplicate_rows": 0
+    }
+  ],
+  "category_checks": [
+    {
+      "column": "customers.gender",
+      "whitespace": 0,
+      "normalized_collisions": 0
+    },
+    {
+      "column": "customers.city",
+      "whitespace": 0,
+      "normalized_collisions": 0
+    },
+    {
+      "column": "products.category",
+      "whitespace": 0,
+      "normalized_collisions": 0
+    },
+    {
+      "column": "orders.payment_method",
+      "whitespace": 0,
+      "normalized_collisions": 0
+    },
+    {
+      "column": "orders.order_status",
+      "whitespace": 0,
+      "normalized_collisions": 0
+    }
+  ],
+  "marker_checks": [
+    {
+      "column": "customers.name",
+      "suspect_missing": 0
+    },
+    {
+      "column": "customers.gender",
+      "suspect_missing": 0
+    },
+    {
+      "column": "customers.city",
+      "suspect_missing": 0
+    },
+    {
+      "column": "customers.signup_date",
+      "suspect_missing": 0
+    },
+    {
+      "column": "products.product_name",
+      "suspect_missing": 0
+    },
+    {
+      "column": "products.category",
+      "suspect_missing": 0
+    },
+    {
+      "column": "orders.order_date",
+      "suspect_missing": 0
+    },
+    {
+      "column": "orders.payment_method",
+      "suspect_missing": 0
+    },
+    {
+      "column": "orders.order_status",
+      "suspect_missing": 0
+    }
+  ],
+  "numeric": [
+    {
+      "index": "age",
+      "count": 150.0,
+      "mean": 42.086666666666666,
+      "std": 15.613166301832567,
+      "min": 19.0,
+      "25%": 29.0,
+      "50%": 40.0,
+      "75%": 57.0,
+      "max": 69.0,
+      "dataset": "customers"
+    },
+    {
+      "index": "price",
+      "count": 100.0,
+      "mean": 110040.0,
+      "std": 56433.91057357502,
+      "min": 5000.0,
+      "25%": 65750.0,
+      "50%": 112000.0,
+      "75%": 161000.0,
+      "max": 200000.0,
+      "dataset": "products"
+    },
+    {
+      "index": "quantity",
+      "count": 764.0,
+      "mean": 3.053664921465969,
+      "std": 1.4108732125114223,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 3.0,
+      "75%": 4.0,
+      "max": 5.0,
+      "dataset": "order_items"
+    },
+    {
+      "index": "unit_price",
+      "count": 764.0,
+      "mean": 108561.51832460733,
+      "std": 56996.77060404932,
+      "min": 5000.0,
+      "25%": 62000.0,
+      "50%": 111000.0,
+      "75%": 161250.0,
+      "max": 200000.0,
+      "dataset": "order_items"
+    }
+  ],
+  "category_sales": [
+    {
+      "category": "스포츠",
+      "line_amount": 50174000
+    },
+    {
+      "category": "뷰티",
+      "line_amount": 47551000
+    },
+    {
+      "category": "전자기기",
+      "line_amount": 41003000
+    },
+    {
+      "category": "생활용품",
+      "line_amount": 34839000
+    },
+    {
+      "category": "식품",
+      "line_amount": 33597000
+    },
+    {
+      "category": "도서",
+      "line_amount": 24645000
+    },
+    {
+      "category": "패션",
+      "line_amount": 23801000
+    }
+  ]
+}
