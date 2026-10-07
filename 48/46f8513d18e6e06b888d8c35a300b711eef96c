@@ -1,0 +1,19 @@
+chapter04/chapter04.ipynb
+  s_2301fd4752cc88::t_1bdacfd01624a5 51,106,148,242,388,693,846,939,981,1036,1306,1484,1678,1686,1690-1710,1715-1731,1733-1736,1741-1760,3713-3756
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4846f8513d18e6e06b888d8c35a300b711eef96c",
+  "prompts": {},
+  "sessions": {
+    "s_2301fd4752cc88": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7e093202-c55f-4240-8d90-787428d958c5",
+        "model": "unknown"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
