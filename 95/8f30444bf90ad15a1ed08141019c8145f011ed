@@ -1,0 +1,19 @@
+chapter05/reports/ch05_evidence_capture.json
+  s_90e3c25cbbce9a::t_70cee74cbf9f75 1-145
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "958f30444bf90ad15a1ed08141019c8145f011ed",
+  "prompts": {},
+  "sessions": {
+    "s_90e3c25cbbce9a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a139f5-5977-7262-9c61-f6f9aa7b3e77",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
