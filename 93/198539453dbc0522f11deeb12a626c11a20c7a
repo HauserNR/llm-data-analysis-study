@@ -1,0 +1,51 @@
+chapter05/.gitignore
+  s_90e3c25cbbce9a::t_8fa6a5b74d312c 1-2
+chapter05/chapter05.ipynb
+  s_90e3c25cbbce9a::t_826899e859939f 14,19,31,33-44,53-57,149,152,155-163,166-168,173-191,207,311-314,323-327,334,340,370-373,413-416,512-515,530-533,587-590,637-640,696-699,813-816,934-937,964-967,1004-1007,1049-1052,1068,1071,1074,1077,1110-1113,1190-1193,1253-1256,1363-1366,1471-1474,1523-1526,1645-1648,1695-1698,1741-1744,1838-1841,1876-1879,1988-1991,2115-2118,2126-2129,2164-2167,2176,2244-2247,2316-2319,2338,2341,2344,2347,2383-2386,2494-2497,2593-2596,2696-2699,2709,2748,2774-2775,2832-2835,3055-3058,3128-3131,3290-3293,3499-3502,3510,3516,3519,3529-3532,3537,3559-3560,3562-3563,3582-3585,3610-3613,4152-4153,4182-4185,4210-4213,4674,4707-4710,4735-4738,5375-5376,5412-5415,5434-5437,6203-6204,6242-6245,6320,6375-6378,6403-6406,6625,6629-6633,6639,6674,6677-6680,6685,6695-6698,6849-6850,6862,6869,6879,6894,6896,6926-6929,7057,7245-7248,7325-7328,7338-7343,7367-7375,7392,7452,7456-7461
+chapter05/data/processed/customers_clean.csv
+  s_90e3c25cbbce9a::t_5cc10a781a1f8d 1-151
+chapter05/data/processed/order_items_clean.csv
+  s_90e3c25cbbce9a::t_b71f95cd11e96c 1-753
+chapter05/data/processed/orders_clean.csv
+  s_90e3c25cbbce9a::t_1cb151f01be7c0 1-301
+chapter05/data/processed/products_clean.csv
+  s_90e3c25cbbce9a::t_abf9c59d747f10 1-97
+chapter05/data/raw/customers.csv
+  s_90e3c25cbbce9a::t_162af5ad304030 1-153
+chapter05/data/raw/order_items.csv
+  s_90e3c25cbbce9a::t_69f036186e0880 1-766
+chapter05/data/raw/orders.csv
+  s_90e3c25cbbce9a::t_1679f6b73e9df8 1-303
+chapter05/data/raw/products.csv
+  s_90e3c25cbbce9a::t_7c38b9934766f9 1-103
+chapter05/reports/ch05_preprocessing_summary.md
+  s_90e3c25cbbce9a::t_04157c23857efc 1-104
+chapter05/scripts/preprocess_data.py
+  s_90e3c25cbbce9a::t_a4d54df2af70c3 1-10
+chapter05/scripts/preprocess_data_official.py
+  s_90e3c25cbbce9a::t_3b766c6ca6b7c5 1-86
+chapter05/src/__init__.py
+  s_90e3c25cbbce9a::t_531658f2167caa 1
+chapter05/src/data_loader.py
+  s_90e3c25cbbce9a::t_d6c7d50227f8ff 1-22
+chapter05/src/preprocessing.py
+  s_90e3c25cbbce9a::t_6876aea224ff58 1-365
+chapter05/src/submission_preprocessing.py
+  s_90e3c25cbbce9a::t_7c8bf9742ca928 1-170
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "93198539453dbc0522f11deeb12a626c11a20c7a",
+  "prompts": {},
+  "sessions": {
+    "s_90e3c25cbbce9a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a139f5-5977-7262-9c61-f6f9aa7b3e77",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
