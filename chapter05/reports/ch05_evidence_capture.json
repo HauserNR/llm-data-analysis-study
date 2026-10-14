@@ -1,0 +1,145 @@
+{
+  "capture_application": "Visual Studio Code",
+  "capture_method": "Native App.getScreenshot of executed chapter05.ipynb",
+  "captured_date": "2026-10-15",
+  "encoding_only": "JPEG screenshot decoded and saved as PNG; no resize, crop, styling, or pixel changes",
+  "notebook_code_cells": 55,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+  ],
+  "error_outputs": 0,
+  "screenshots": [
+    {
+      "file": "images/step01_before.png",
+      "cell_index_one_based": 23,
+      "cell_id": "15c9c466",
+      "execution_count": 11,
+      "source_jpeg_sha256": "df3217534959275f03be4426b2fd6585c2a7e70595f98d98ab5e61e15e4177ec",
+      "png_sha256": "21e981b6968c0031805c8184dfd3099e8c6b6888bfb8d102d771fe71eb06dbc2",
+      "dimensions": [
+        2648,
+        1730
+      ],
+      "decoded_pixels_unchanged": true
+    },
+    {
+      "file": "images/step02_cleaning.png",
+      "cell_index_one_based": 43,
+      "cell_id": "e1545618",
+      "execution_count": 24,
+      "source_jpeg_sha256": "a608f80c68d652917e6d03b18b44203bf0555c23f1f9e74f9f5256c6c9ee6535",
+      "png_sha256": "965f7b8e3fb92a34e41d8f38f9bdbce2534b714fd06a10d20dd012aace68dcc6",
+      "dimensions": [
+        2648,
+        1730
+      ],
+      "decoded_pixels_unchanged": true
+    },
+    {
+      "file": "images/step03_rules.png",
+      "cell_index_one_based": 51,
+      "cell_id": "b80f1d9d",
+      "execution_count": 29,
+      "source_jpeg_sha256": "e65c165ffe4c6194afc532d07007aaa47bb00086d2874acc3cc1fabb35a75314",
+      "png_sha256": "6a5674fa616e195a59e7d97fc49db4bcc313b51e095d05155a6f77630bce5479",
+      "dimensions": [
+        2648,
+        1730
+      ],
+      "decoded_pixels_unchanged": true
+    },
+    {
+      "file": "images/step04_validation.png",
+      "cell_index_one_based": 60,
+      "cell_id": "496814ec",
+      "execution_count": 35,
+      "source_jpeg_sha256": "e0b4a0cd2f0d3ba434cd5415941b8af0a20fe83405fc25112941e6431d0308ce",
+      "png_sha256": "6869def973f930ff03d4f763143da7ab7250f46a28d34edfe2fc222c1e67e8fe",
+      "dimensions": [
+        2648,
+        1730
+      ],
+      "decoded_pixels_unchanged": true
+    },
+    {
+      "file": "images/step05_before_after.png",
+      "cell_index_one_based": 65,
+      "cell_id": "6dc0e5e5",
+      "execution_count": 38,
+      "source_jpeg_sha256": "fb1cee1140d8c67c93ab08a3b2c9b6530c54b0aa6398406f0a00defb688cbc53",
+      "png_sha256": "42db3d86951740e76fb28d48b00927e8d7096e8d3574f4059c60bd669889d1d2",
+      "dimensions": [
+        2648,
+        1730
+      ],
+      "decoded_pixels_unchanged": true
+    },
+    {
+      "file": "images/step06_reproducible.png",
+      "cell_index_one_based": 83,
+      "cell_id": "233a7563",
+      "execution_count": 49,
+      "source_jpeg_sha256": "098148a7e9688d0560ce06503a88665f3581633267c9917699ad96c889cc446c",
+      "png_sha256": "cf975dbfbc647496a4af189b8a9576cc033ddb3b0a530f6763d11e9a9e80a728",
+      "dimensions": [
+        2648,
+        1730
+      ],
+      "decoded_pixels_unchanged": true
+    }
+  ]
+}
