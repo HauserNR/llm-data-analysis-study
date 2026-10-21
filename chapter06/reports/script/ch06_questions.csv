@@ -1,0 +1,7 @@
+﻿analysis_area,question,metric,required_data
+고객,고객은 어떤 지역과 연령대에 분포하는가?,"고객 수, 평균 나이",customers
+상품,어떤 카테고리의 상품이 많은가?,카테고리별 상품 수,products
+주문,주문 상태와 결제수단 분포는 어떤가?,"주문 수, 비율",orders
+매출,카테고리별 매출은 어떻게 다른가?,"총매출, 매출 비중","order_items, products"
+시간,월별 매출과 주문 수는 어떻게 변하는가?,"월별 매출, 월별 주문 수","orders, order_items"
+고객 가치,구매 금액이 높은 고객은 누구인가?,"고객별 총매출, 주문 횟수","customers, orders, order_items"

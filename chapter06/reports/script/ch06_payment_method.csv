@@ -1,0 +1,5 @@
+﻿payment_method,order_count,order_ratio
+kakao_pay,90,30.0
+card,72,24.0
+bank_transfer,70,23.33
+naver_pay,68,22.67

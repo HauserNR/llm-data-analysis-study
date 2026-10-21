@@ -1,0 +1,74 @@
+{
+  "capture_application": "Visual Studio Code",
+  "capture_method": "cua App.getScreenshot of the executed chapter06.ipynb",
+  "date": "2026-10-21",
+  "processing": "Original JPEG bytes saved without pixel modifications",
+  "screenshots": [
+    {
+      "file": "images/step01_distribution.jpg",
+      "sha256": "04549515cd95037e637b70fe6773032d5eb0b3abf3eb81bcea7dfe47d2784bbf",
+      "dimensions": [
+        3024,
+        1736
+      ],
+      "format": "JPEG",
+      "cell_id": "f0f35721",
+      "execution_count": 16
+    },
+    {
+      "file": "images/step02_category.jpg",
+      "sha256": "af2726f415aeaf4cc3f1f3eb3c8eacb6e1b61273b84d495893317072d19fc556",
+      "dimensions": [
+        3024,
+        1736
+      ],
+      "format": "JPEG",
+      "cell_id": "4f056b71",
+      "execution_count": 21
+    },
+    {
+      "file": "images/step03_monthly.jpg",
+      "sha256": "1c71a2b39c98abf390cc88888b1dbe554a6e40154376da21414b51374e36e018",
+      "dimensions": [
+        3024,
+        1736
+      ],
+      "format": "JPEG",
+      "cell_id": "4b3dfdc6",
+      "execution_count": 24
+    },
+    {
+      "file": "images/step04_validation.jpg",
+      "sha256": "bcea36552e78eba3e6b831656b5dccf2fd1ff34f92caf3bdbf57dde3d7124d38",
+      "dimensions": [
+        3024,
+        1736
+      ],
+      "format": "JPEG",
+      "cell_id": "36b5934c",
+      "execution_count": 26
+    },
+    {
+      "file": "images/step05_followup.jpg",
+      "sha256": "54242d70778f0b186e9b6e144e280b326580e66bfed01a61a0e53e13daa3df57",
+      "dimensions": [
+        3024,
+        1736
+      ],
+      "format": "JPEG",
+      "cell_id": "7bb91752",
+      "execution_count": 39
+    },
+    {
+      "file": "images/step06_llm_review.jpg",
+      "sha256": "849993ca835061f97d20011b9794f181b19a1b083fb203b540fc4d3e0f700212",
+      "dimensions": [
+        3024,
+        1736
+      ],
+      "format": "JPEG",
+      "cell_id": "711b6f11",
+      "execution_count": 40
+    }
+  ]
+}
