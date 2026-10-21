@@ -1,0 +1,105 @@
+chapter06/.gitignore
+  s_7e6b415c11c29b::t_08bed19e651448 1-2
+chapter06/README.md
+  s_7e6b415c11c29b::t_a54ba8230b93bd 1-9
+chapter06/chapter06.ipynb
+  s_7e6b415c11c29b::t_02650093340089 1-5519
+chapter06/references/CHAPTER_SUBMISSION_MATRIX.md
+  s_7e6b415c11c29b::t_163d4e5d157240 1-117
+chapter06/references/SUBMISSION_GUIDE.md
+  s_7e6b415c11c29b::t_e914e44810e238 1-371
+chapter06/references/ch06_eda_questions.ipynb
+  s_7e6b415c11c29b::t_9e71fdc886f96e 1-953
+chapter06/references/chapter06.md
+  s_7e6b415c11c29b::t_a5c3c4ff82842a 1-142
+chapter06/references/chapter06_assignment.md
+  s_7e6b415c11c29b::t_29c4563aa593e0 1-77
+chapter06/references/eda_official.py
+  s_7e6b415c11c29b::t_dfc88486c64429 1-345
+chapter06/reports/ch06_category_comparison.csv
+  s_7e6b415c11c29b::t_64e493a183e6a4 1-9
+chapter06/reports/ch06_category_sales.csv
+  s_7e6b415c11c29b::t_4cc1f91eb31912 1-9
+chapter06/reports/ch06_city_comparison.csv
+  s_7e6b415c11c29b::t_7bdd3ccb8969c2 1-13
+chapter06/reports/ch06_customer_city.csv
+  s_7e6b415c11c29b::t_61efe6963bd60f 1-12
+chapter06/reports/ch06_customer_sales.csv
+  s_7e6b415c11c29b::t_fc56c7485293af 1-100
+chapter06/reports/ch06_eda_questions.csv
+  s_7e6b415c11c29b::t_63aab83d0ab745 1-6
+chapter06/reports/ch06_eda_summary.md
+  s_7e6b415c11c29b::t_70a6abb06593bd 1-87
+chapter06/reports/ch06_evidence_capture.json
+  s_7e6b415c11c29b::t_7107ff8d2c47f6 1-74
+chapter06/reports/ch06_execution_validation.json
+  s_7e6b415c11c29b::t_c2c413c505a6ec 1-51
+chapter06/reports/ch06_llm_review.csv
+  s_7e6b415c11c29b::t_d14ed6cdcd9eaf 1-6
+chapter06/reports/ch06_monthly_category.csv
+  s_7e6b415c11c29b::t_ce36ff8a9acf7a 1-17
+chapter06/reports/ch06_monthly_sales.csv
+  s_7e6b415c11c29b::t_e2a107d33ef31b 1-17
+chapter06/reports/ch06_payment_aov.csv
+  s_7e6b415c11c29b::t_ed0c5223c1b859 1-5
+chapter06/reports/ch06_product_category.csv
+  s_7e6b415c11c29b::t_aa3cb9b643805b 1-8
+chapter06/reports/ch06_quantity_sensitivity.csv
+  s_7e6b415c11c29b::t_e1ec0bcd2530b0 1-9
+chapter06/reports/ch06_segment_summary.csv
+  s_7e6b415c11c29b::t_339169a295bf35 1-5
+chapter06/reports/ch06_total_validation.csv
+  s_7e6b415c11c29b::t_1afcb58809da7b 1-5
+chapter06/reports/input_manifest.csv
+  s_7e6b415c11c29b::t_8196653c6d93d8 1-5
+chapter06/reports/script/ch06_category_price.csv
+  s_7e6b415c11c29b::t_8ffe92d2086a56 1-8
+chapter06/reports/script/ch06_category_sales.csv
+  s_7e6b415c11c29b::t_12aac10c9a4bd0 1-9
+chapter06/reports/script/ch06_customer_city.csv
+  s_7e6b415c11c29b::t_598be788f8f9f7 1-12
+chapter06/reports/script/ch06_customer_gender.csv
+  s_7e6b415c11c29b::t_3f0832593a1e55 1-3
+chapter06/reports/script/ch06_customer_sales.csv
+  s_7e6b415c11c29b::t_c1ec63e0658e43 1-100
+chapter06/reports/script/ch06_eda_result_summary.csv
+  s_7e6b415c11c29b::t_f1127ea171bbd3 1-6
+chapter06/reports/script/ch06_monthly_sales.csv
+  s_7e6b415c11c29b::t_a4b3d307621247 1-17
+chapter06/reports/script/ch06_order_status.csv
+  s_7e6b415c11c29b::t_78a382fdcf9da0 1-4
+chapter06/reports/script/ch06_payment_method.csv
+  s_7e6b415c11c29b::t_6f5cec51d1e83c 1-5
+chapter06/reports/script/ch06_product_category.csv
+  s_7e6b415c11c29b::t_b0a8a2d20cc94c 1-8
+chapter06/reports/script/ch06_questions.csv
+  s_7e6b415c11c29b::t_866de438435c6c 1-7
+chapter06/scripts/run_eda.py
+  s_7e6b415c11c29b::t_d80235f9ebaca7 1-22
+chapter06/src/eda.py
+  s_7e6b415c11c29b::t_12200efeda1494 1-348
+data/processed/customers_clean.csv
+  s_7e6b415c11c29b::t_f4ecb9acdd2c61 1-151
+data/processed/order_items_clean.csv
+  s_7e6b415c11c29b::t_200005ef1a63b9 1-753
+data/processed/orders_clean.csv
+  s_7e6b415c11c29b::t_025cf9dd1ffba3 1-301
+data/processed/products_clean.csv
+  s_7e6b415c11c29b::t_68d8ca32955a72 1-97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4252a2b1829fd3b91161e2a83c6637216c9b9ba7",
+  "prompts": {},
+  "sessions": {
+    "s_7e6b415c11c29b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a15e9c-067d-7d32-8ca8-d0461d77cd14",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
