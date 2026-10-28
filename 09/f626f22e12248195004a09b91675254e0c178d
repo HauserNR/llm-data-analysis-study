@@ -1,0 +1,65 @@
+chapter07/scripts/run_visualization.py
+  s_9abc2e1f2f8165::t_eba2d2226a6533 1-15
+chapter07/.gitignore
+  s_9abc2e1f2f8165::t_1b1cf2cdb2aab2 1
+chapter07/README.md
+  s_9abc2e1f2f8165::t_1b1cf2cdb2aab2 1-45
+chapter07/src/__init__.py
+  s_9abc2e1f2f8165::t_eba2d2226a6533 1
+chapter07/src/visualization.py
+  s_9abc2e1f2f8165::t_1b1cf2cdb2aab2 160,220
+  s_9abc2e1f2f8165::t_eba2d2226a6533 1-159,161-219,221-231,233-348
+  s_9abc2e1f2f8165::t_d81b8dd2732eb0 232
+chapter07/chapter07.ipynb
+  s_9abc2e1f2f8165::t_bca51f95fbe2d8 1-3010
+chapter07/references/ch07_visualization.ipynb
+  s_9abc2e1f2f8165::t_ea5f8824e6f2b2 1-224
+chapter07/references/chapter07.md
+  s_9abc2e1f2f8165::t_13cebe7bc0c907 1-134
+chapter07/references/chapter07_assignment.md
+  s_9abc2e1f2f8165::t_7be474c51bc0ba 1-81
+chapter07/references/visualization_official.py
+  s_9abc2e1f2f8165::t_e061b316973753 1-472
+chapter07/reports/category.csv
+  s_9abc2e1f2f8165::t_0756b428ae24a0 1-9
+chapter07/reports/chart_validation.csv
+  s_9abc2e1f2f8165::t_9ed2160876c4ff 1-34
+chapter07/reports/customers.csv
+  s_9abc2e1f2f8165::t_018549e2c40200 1-99
+chapter07/reports/execution_validation.json
+  s_9abc2e1f2f8165::t_b6cee40b43eafb 1-15
+chapter07/reports/histogram_bins.csv
+  s_9abc2e1f2f8165::t_16bd06e9afda24 1-121
+chapter07/reports/input_manifest.csv
+  s_9abc2e1f2f8165::t_5d2f0642612210 1-5
+chapter07/reports/monthly.csv
+  s_9abc2e1f2f8165::t_f28017d9d623c4 1-15
+chapter07/reports/quality.csv
+  s_9abc2e1f2f8165::t_860d581fc28739 1-6
+chapter07/reports/scatter.csv
+  s_9abc2e1f2f8165::t_a4d0e66a4952a5 1-96
+chapter07/reports/scatter_sensitivity.csv
+  s_9abc2e1f2f8165::t_bd5c2fe3b3a451 1-3
+chapter07/reports/scope.csv
+  s_9abc2e1f2f8165::t_9c277d65a500cc 1-8
+chapter07/reports/status.csv
+  s_9abc2e1f2f8165::t_069681130be3d6 1-4
+chapter07/reports/validation.csv
+  s_9abc2e1f2f8165::t_33effef25cf2c0 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "09f626f22e12248195004a09b91675254e0c178d",
+  "prompts": {},
+  "sessions": {
+    "s_9abc2e1f2f8165": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a181b8-5809-7a52-8d9d-ebaa03d1fee7",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
