@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-10-28",
+  "completed_amount": 141340000.0,
+  "aggregate_checks": 10,
+  "chart_checks": 33,
+  "all_passed": true,
+  "figures": [
+    "graph01_category.png",
+    "graph02_monthly.png",
+    "graph03_price.png",
+    "graph04_scatter.png",
+    "graph05_customers.png",
+    "graph06_status.png"
+  ]
+}

@@ -1,0 +1,6 @@
+issue_and_policy,detail_rows,amount_krw
+주문 미연결 상세: 상태 불명으로 completed 범위 밖,2,922000.0
+completed 상품 미연결: 카테고리 별도/산점도 제외,16,4015000.0
+completed 날짜 결측: 월별만 제외,6,1903000.0
+completed 기준일 이후: 월별만 제외,3,909000.0
+completed 고객 미연결: 고객 순위 제외,1,376000.0

@@ -1,0 +1,11 @@
+check,actual,expected,passed
+상세별 line_total = quantity × unit_price,252140000.0,252140000.0,True
+병합 후 상세 행 수 보존,752.0,752.0,True
+상품 병합 후 completed 상세 보존,446.0,446.0,True
+completed 독립 isin 필터 총합,141340000.0,141340000.0,True
+카테고리 총합(상품 미연결 포함),141340000.0,141340000.0,True
+월별 + 날짜 결측 + 미래 = completed,141340000.0,141340000.0,True
+상품별 + 상품 미연결 = completed,141340000.0,141340000.0,True
+익명 고객별 + 고객 미연결 = completed,141340000.0,141340000.0,True
+상태별 주문 수 총합,300.0,300.0,True
+Chapter 06 completed 총합 대조,141340000.0,141340000.0,True
