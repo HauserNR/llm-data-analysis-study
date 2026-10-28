@@ -1,0 +1,19 @@
+chapter07/chapter07.ipynb
+  s_9abc2e1f2f8165::t_bab90022937d50 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "69d40450cc8f5eceb1fa90d34d46b6af5c30f834",
+  "prompts": {},
+  "sessions": {
+    "s_9abc2e1f2f8165": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a181b8-5809-7a52-8d9d-ebaa03d1fee7",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
