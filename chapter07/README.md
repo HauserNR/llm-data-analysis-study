@@ -26,7 +26,7 @@ Jupyter 및 한글 폰트(Apple SD Gothic Neo/맑은 고딕/NanumGothic/Noto San
 
 ## 참고 자료와 보완
 
-2026-10-28에 확인한 공식 자료의 사본을 `references/`에 보관했다.
+공식 자료는 다음 링크에서 확인할 수 있다.
 
 - [공식 skeleton](https://github.com/GilbertMoon/llm-data-analysis-course/blob/main/notebooks/ch07_visualization.ipynb)
 - [단계별 실습](https://github.com/GilbertMoon/llm-data-analysis-course/blob/main/practice/chapter07/chapter07.md)

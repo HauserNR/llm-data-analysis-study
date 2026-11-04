@@ -17,10 +17,11 @@
 - `reports/`: 공식 검증표·집계표·보고서, 추가 검증·그래프 검증·입력 해시·재실행 로그
 - `images/`: 실제 집계에서 만든 PNG 3개 (Notebook에도 출력으로 포함)
 - `src/`: 공식 코드를 바탕으로 이 장에 한정한 공통 모듈
-- `references/`: 2026-11-04 내려받은 공식 가이드·템플릿·Notebook·공통 제출 기준·코드 원본
 
 공식 코드 대비 변경: 출력 경로를 chapter08 아래로 분리하고 행 단위 processed 파일 저장을 생략했다. 그래프는 실제 matplotlib 객체의 값을 집계와 비교하고 월 금액·주문 수를 두 패널로 그린다. 추가 검증은 원본 ID 집합 기반의 독립 금액 계산, 원 단위 정확 총합 일치, 날짜·범위·주문 커버리지 등을 검사한다. 공식 8개 Validation 조건은 유지했다. 최종 재실행은 별도 Python 프로세스에서 수행한다.
 
 LLM 보조로 작성했으며 자동 검증을 작성자의 직접 검토로 기록하지 않았다. 제출자는 Notebook의 수치·그래프·해석과 LLM 기록을 직접 확인해야 한다.
 
 LMS 제출 주소는 [https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter08/chapter08.ipynb](https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter08/chapter08.ipynb)이다. GitHub 업로드와 원격 렌더링 확인, LMS 제출은 로컬 파일 생성과 별개다.
+
+공식 자료: [실습 가이드](https://github.com/GilbertMoon/llm-data-analysis-course/blob/main/practice/chapter08/chapter08.md), [공식 Notebook](https://github.com/GilbertMoon/llm-data-analysis-course/blob/main/notebooks/ch08_midterm_project.ipynb), [답안 템플릿](https://github.com/GilbertMoon/llm-data-analysis-course/blob/main/practice/chapter08/templates/chapter08_assignment.md).
