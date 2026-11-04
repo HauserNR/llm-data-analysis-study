@@ -23,4 +23,4 @@
 
 LLM 보조로 작성했으며 자동 검증을 작성자의 직접 검토로 기록하지 않았다. 제출자는 Notebook의 수치·그래프·해석과 LLM 기록을 직접 확인해야 한다.
 
-LMS 제출 주소는 [최종 Notebook 파일 URL](https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter08/chapter08.ipynb)이다. GitHub 업로드와 원격 렌더링 확인, LMS 제출은 로컬 파일 생성과 별개다.
+LMS 제출 주소는 [https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter08/chapter08.ipynb](https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter08/chapter08.ipynb)이다. GitHub 업로드와 원격 렌더링 확인, LMS 제출은 로컬 파일 생성과 별개다.
