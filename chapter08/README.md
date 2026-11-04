@@ -20,7 +20,7 @@
 
 공식 코드 대비 변경: 출력 경로를 chapter08 아래로 분리하고 행 단위 processed 파일 저장을 생략했다. 그래프는 실제 matplotlib 객체의 값을 집계와 비교하고 월 금액·주문 수를 두 패널로 그린다. 추가 검증은 원본 ID 집합 기반의 독립 금액 계산, 원 단위 정확 총합 일치, 날짜·범위·주문 커버리지 등을 검사한다. 공식 8개 Validation 조건은 유지했다. 최종 재실행은 별도 Python 프로세스에서 수행한다.
 
-LLM 보조로 작성했으며 자동 검증을 작성자의 직접 검토로 기록하지 않았다. 제출자는 Notebook의 수치·그래프·해석과 LLM 기록을 직접 확인해야 한다.
+LLM 활용 목적과 반영 내용, 실제 데이터로 검증한 방법은 Notebook의 답안 9에 기록했다.
 
 LMS 제출 주소는 [https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter08/chapter08.ipynb](https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter08/chapter08.ipynb)이다. GitHub 업로드와 원격 렌더링 확인, LMS 제출은 로컬 파일 생성과 별개다.
 
