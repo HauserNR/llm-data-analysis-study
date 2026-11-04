@@ -1,0 +1,103 @@
+chapter08/references/midterm_project.py
+  s_2dd84e129a23d8::t_fe3098c587761c 1-952
+chapter08/src/evidence.py
+  s_2dd84e129a23d8::t_b24a1c2861f35f 29
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-28,30-69
+chapter08/.gitignore
+  s_2dd84e129a23d8::t_b24a1c2861f35f 1-3
+chapter08/reports/ch08_date_checks.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-2
+chapter08/reports/ch08_relationship_checks.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-4
+chapter08/reports/ch08_midterm_report.md
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-191
+scripts/run_midterm_project.py
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-27
+chapter08/src/visualization.py
+  s_2dd84e129a23d8::t_0dbec7c456f1c8 1-11
+chapter08/src/preprocessing.py
+  s_2dd84e129a23d8::t_0dbec7c456f1c8 1-365
+chapter08/references/ch08_midterm_project.ipynb
+  s_2dd84e129a23d8::t_fe3098c587761c 1-634
+chapter08/reports/ch08_submission_review.csv
+  s_2dd84e129a23d8::t_b24a1c2861f35f 1-13
+chapter08/references/CHAPTER_SUBMISSION_MATRIX.md
+  s_2dd84e129a23d8::t_fe3098c587761c 1-117
+chapter08/reports/ch08_order_status_summary.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-4
+chapter08/reports/ch08_preprocessing_comparison.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-5
+chapter08/references/data_loader.py
+  s_2dd84e129a23d8::t_fe3098c587761c 1-22
+chapter08/reports/ch08_input_manifest.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-9
+chapter08/reports/ch08_raw_fk_checks.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-4
+chapter08/reports/ch08_project_validation.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-9
+chapter08/reports/ch08_line_total_check.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-2
+chapter08/src/midterm_project.py
+  s_2dd84e129a23d8::t_0dbec7c456f1c8 1-932
+chapter08/reports/ch08_additional_validation.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-24
+chapter08/reports/ch08_dataset_summary.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-5
+chapter08/reports/ch08_raw_pk_checks.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-5
+chapter08/reports/ch08_customer_sales.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-101
+chapter08/reports/ch08_reproduce.log
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-44
+chapter08/reports/ch08_total_consistency_check.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-5
+chapter08/references/chapter08_assignment.md
+  s_2dd84e129a23d8::t_fe3098c587761c 1-174
+chapter08/references/preprocessing.py
+  s_2dd84e129a23d8::t_fe3098c587761c 1-365
+chapter08/references/chapter08.md
+  s_2dd84e129a23d8::t_fe3098c587761c 1-472
+chapter08/reports/ch08_merge_checks.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-4
+chapter08/src/data_loader.py
+  s_2dd84e129a23d8::t_0dbec7c456f1c8 1-22
+chapter08/README.md
+  s_2dd84e129a23d8::t_fca7a56724f776 1-26
+chapter08/reports/ch08_column_checks.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-44
+chapter08/reports/ch08_key_duplicate_checks.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-5
+chapter08/reports/ch08_amount_scope_summary.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-4
+chapter08/reports/ch08_chart_validation.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-5
+chapter08/reports/ch08_interpretation_notes.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-5
+chapter08/reports/ch08_monthly_sales.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-14
+chapter08/references/SUBMISSION_GUIDE.md
+  s_2dd84e129a23d8::t_fe3098c587761c 1-371
+chapter08/references/run_midterm_project.py
+  s_2dd84e129a23d8::t_fe3098c587761c 1-107
+chapter08/reports/ch08_category_sales.csv
+  s_2dd84e129a23d8::t_70c8f53d96d520 1-8
+chapter08/chapter08.ipynb
+  s_2dd84e129a23d8::t_7c579b1019c23d 82,85-90,93-103,149,152-157,197,200-205,208-315,344,347-352,355-866,909,912-917,920-1068,1126,1129-1134,1137-1386,1427,1430-1435,1438-1874,1914,1917-1922,1925-2015,2075,2078-2083,2086-2095,2121,2124-2129,2132-2253,2292,2295-2300,2303-2402,2437,2440-2445,2448-2458,2498,2501-2506,2509-2581,2599,2601-2620,2645,2647-2666,2691,2693-2712,2741,2744-2749,2752-2814,2846,2849-2854,2857-2977,3026,3029-3034,3037-3064,3175,3178-3183,3186-3468,3551-3556,3558-3560
+  s_2dd84e129a23d8::t_fca7a56724f776 1-81,83-84,91-92,104-148,150-151,158-196,198-199,206-207,316-343,345-346,353-354,867-908,910-911,918-919,1069-1125,1127-1128,1135-1136,1387-1426,1428-1429,1436-1437,1875-1913,1915-1916,1923-1924,2016-2074,2076-2077,2084-2085,2096-2120,2122-2123,2130-2131,2254-2291,2293-2294,2301-2302,2403-2436,2438-2439,2446-2447,2459-2497,2499-2500,2507-2508,2582-2598,2600,2621-2644,2646,2667-2690,2692,2713-2740,2742-2743,2750-2751,2815-2845,2847-2848,2855-2856,2978-3025,3027-3028,3035-3036,3065-3174,3176-3177,3184-3185,3469-3550,3557,3561-3565
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "cec4fffdf5691a72398d6b0a5bb99c0f1875cddf",
+  "prompts": {},
+  "sessions": {
+    "s_2dd84e129a23d8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1a5d1-9c12-78c1-9233-66df9c783b47",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
