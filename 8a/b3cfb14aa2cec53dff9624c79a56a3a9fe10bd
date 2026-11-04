@@ -1,0 +1,29 @@
+chapter06/chapter06.ipynb
+  s_2dd84e129a23d8::t_db181ce11748ee 19
+chapter07/chapter07.ipynb
+  s_2dd84e129a23d8::t_db181ce11748ee 33
+chapter06/README.md
+  s_2dd84e129a23d8::t_db181ce11748ee 7,10-11
+chapter07/README.md
+  s_2dd84e129a23d8::t_db181ce11748ee 29
+chapter08/chapter08.ipynb
+  s_2dd84e129a23d8::t_db181ce11748ee 14
+chapter08/README.md
+  s_2dd84e129a23d8::t_db181ce11748ee 26-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8ab3cfb14aa2cec53dff9624c79a56a3a9fe10bd",
+  "prompts": {},
+  "sessions": {
+    "s_2dd84e129a23d8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1a5d1-9c12-78c1-9233-66df9c783b47",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
