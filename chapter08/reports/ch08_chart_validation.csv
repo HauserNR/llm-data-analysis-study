@@ -1,0 +1,5 @@
+chart,points,max_abs_difference,status
+category,7,0.0,PASS
+monthly_amount,13,0.0,PASS
+monthly_orders,13,0.0,PASS
+top_customers,10,0.0,PASS

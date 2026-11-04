@@ -1,0 +1,13 @@
+check,status
+notebook_all_code_executed,PASS
+notebook_no_error_outputs,PASS
+three_embedded_figures,PASS
+official_cell_order_preserved,PASS
+raw_and_existing_processed_unchanged,PASS
+ch08_project_validation.csv,PASS
+ch08_additional_validation.csv,PASS
+ch08_chart_validation.csv,PASS
+eleven_answer_sections,PASS
+image_nonempty_ch08_monthly_sales.png,PASS
+image_nonempty_ch08_top_customers.png,PASS
+image_nonempty_ch08_category_sales.png,PASS

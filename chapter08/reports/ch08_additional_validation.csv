@@ -1,0 +1,24 @@
+check,value,expected,status
+raw_pk_integrity,True,True,PASS
+raw_fk_integrity,0,0,PASS
+independent_raw_completed_amount,148990000,148990000,PASS
+completed_scope,True,True,PASS
+completed_order_coverage,184,184,PASS
+all_order_coverage,300,300,PASS
+all_order_dates_valid,0,0,PASS
+future_order_dates_asof_2026_11_04,0,0,PASS
+category_not_missing,0,0,PASS
+positive_finite_amount_inputs,True,True,PASS
+integer_quantities,True,True,PASS
+customers_rows_preserved,150,150,PASS
+products_rows_preserved,100,100,PASS
+orders_rows_preserved,300,300,PASS
+order_items_rows_preserved,764,764,PASS
+monthly_order_count_sum,184,184,PASS
+customer_order_count_sum,184,184,PASS
+calendar_months_complete,13,13,PASS
+category_sales_exact_total,148990000,148990000,PASS
+monthly_sales_exact_total,148990000,148990000,PASS
+customer_sales_exact_total,148990000,148990000,PASS
+saved_customer_schema,"['customer_label', 'city', 'order_count', 'total_sales', 'avg_order_value']","['customer_label', 'city', 'order_count', 'total_sales', 'avg_order_value']",PASS
+anonymous_rank_labels,True,True,PASS
