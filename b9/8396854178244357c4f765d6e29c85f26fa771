@@ -1,0 +1,20 @@
+chapter09/chapter09.ipynb
+  s_a499e40c1e9411::t_ca6457abed1ae6 42-45,224-227,263-266,388-391,502-505,614-617,686-689
+  s_a499e40c1e9411::t_f3f464944a490c 587-591
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b98396854178244357c4f765d6e29c85f26fa771",
+  "prompts": {},
+  "sessions": {
+    "s_a499e40c1e9411": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1c8f8-4e27-78d1-b602-e4dc23ea0a63",
+        "model": "gpt-6-sol"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
