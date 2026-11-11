@@ -1,13 +1,13 @@
-﻿check_item,status
-예측 시점이 명확한가?,PASS (Notebook review)
-목표값과 목표값의 계산 재료를 입력에서 제외했는가?,PASS (Notebook review)
-예측 이후에 알 수 있는 정보를 사용하지 않았는가?,PASS (Notebook review)
-식별자를 일반 숫자 변수로 사용하지 않았는가?,PASS (Notebook review)
-전처리기가 훈련 데이터 안에서만 학습되는가?,PASS (Notebook review)
-같은 날짜가 train과 test에 동시에 포함되지 않는가?,PASS (Notebook review)
-후보 모델 선택을 훈련 기간 TimeSeriesSplit에서만 수행했는가?,PASS (Notebook review)
-모델 선택을 고정한 뒤 test를 최종 평가에만 사용했는가?,PASS (Notebook review)
-DummyRegressor 베이스라인과 비교했는가?,PASS (Notebook review)
-"MAE, RMSE, R²를 올바르게 해석했는가?",PASS (Notebook review)
-음수 R²와 낮은 성능을 숨기지 않았는가?,PASS (Notebook review)
-식별자가 포함된 내부 결과를 외부에 공개하지 않았는가?,PASS (Notebook review)
+﻿check_item,status,review_scope,review_note
+예측 시점이 명확한가?,PASS,현재 제출본 실행 절차,Notebook 1: 예측 시점과 가용 정보·가정 명시
+목표값과 목표값의 계산 재료를 입력에서 제외했는가?,PASS,현재 제출본 실행 절차,"Feature Audit: 허용 6개 열만 입력, 금지 열 overlap 0"
+예측 이후에 알 수 있는 정보를 사용하지 않았는가?,PASS,현재 제출본 실행 절차,교육용 시점 가정하에 허용 Feature만 사용; 운영 시각 검증은 별도 한계
+식별자를 일반 숫자 변수로 사용하지 않았는가?,PASS,현재 제출본 실행 절차,order_id/customer_id/product_id 입력 제외
+전처리기가 훈련 데이터 안에서만 학습되는가?,PASS,현재 제출본 실행 절차,"Pipeline 내부 imputer/scaler/encoder, Train에서만 fit"
+같은 날짜가 train과 test에 동시에 포함되지 않는가?,PASS,현재 제출본 실행 절차,"Train 최대일 < Test 최소일, 달력 날짜 교집합 없음"
+후보 모델 선택을 훈련 기간 TimeSeriesSplit에서만 수행했는가?,PASS,현재 제출본 실행 절차,Train TimeSeriesSplit의 MAE로 비베이스라인 후보 선택
+모델 선택을 고정한 뒤 test를 최종 평가에만 사용했는가?,PASS,현재 제출본 실행 절차,현재 실행은 선택 고정 후 Test 평가; 과거 열람 이력은 Notebook 10에 명시
+DummyRegressor 베이스라인과 비교했는가?,PASS,현재 제출본 실행 절차,DummyRegressor(mean)와 Frozen Random Forest만 최종 비교
+"MAE, RMSE, R²를 올바르게 해석했는가?",PASS,현재 제출본 실행 절차,Notebook 6: 단위·큰 오차·음수 R²·개선율 해석
+음수 R²와 낮은 성능을 숨기지 않았는가?,PASS,현재 제출본 실행 절차,"Notebook 6/10: MAE 0.72% 개선, RMSE 악화, 사용 보류 명시"
+식별자가 포함된 내부 결과를 외부에 공개하지 않았는가?,PASS,현재 제출본 실행 절차,"현재 공개 출력에서 주문 ID 제거, internal CSV는 gitignore 제외"

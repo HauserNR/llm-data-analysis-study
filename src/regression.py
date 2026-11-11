@@ -647,7 +647,25 @@ def build_leakage_checklist() -> pd.DataFrame:
         "음수 R²와 낮은 성능을 숨기지 않았는가?",
         "식별자가 포함된 내부 결과를 외부에 공개하지 않았는가?",
     ]
-    return pd.DataFrame({"check_item": check_items, "status": ["PASS (Notebook review)"] * len(check_items)})
+    # Reviewed against the current submitted workflow, not a claim of a never-viewed dataset.
+    notes = [
+        "Notebook 1: 예측 시점과 가용 정보·가정 명시",
+        "Feature Audit: 허용 6개 열만 입력, 금지 열 overlap 0",
+        "교육용 시점 가정하에 허용 Feature만 사용; 운영 시각 검증은 별도 한계",
+        "order_id/customer_id/product_id 입력 제외",
+        "Pipeline 내부 imputer/scaler/encoder, Train에서만 fit",
+        "Train 최대일 < Test 최소일, 달력 날짜 교집합 없음",
+        "Train TimeSeriesSplit의 MAE로 비베이스라인 후보 선택",
+        "현재 실행은 선택 고정 후 Test 평가; 과거 열람 이력은 Notebook 10에 명시",
+        "DummyRegressor(mean)와 Frozen Random Forest만 최종 비교",
+        "Notebook 6: 단위·큰 오차·음수 R²·개선율 해석",
+        "Notebook 6/10: MAE 0.72% 개선, RMSE 악화, 사용 보류 명시",
+        "현재 공개 출력에서 주문 ID 제거, internal CSV는 gitignore 제외",
+    ]
+    return pd.DataFrame({"check_item": check_items, "status": ["PASS"] * len(check_items),
+                         "review_scope": ["현재 제출본 실행 절차"] * len(check_items),
+                         "review_note": notes})
+
 
 
 def build_regression_validation(

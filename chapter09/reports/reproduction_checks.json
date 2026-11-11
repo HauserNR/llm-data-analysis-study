@@ -1,0 +1,18 @@
+{
+  "fresh_processed_and_report_directories": true,
+  "raw_rows_preserved": true,
+  "all_fk_valid": true,
+  "feature_overlap_zero": true,
+  "strict_time_order": true,
+  "no_calendar_day_overlap": true,
+  "selected_nonbaseline": true,
+  "selection_matches_cv": true,
+  "final_only_two_models": true,
+  "baseline_uses_train_mean": true,
+  "numeric_imputer_statistics_train_only": true,
+  "validation_all_pass": true,
+  "fresh_results_match_submission": true,
+  "missing_detail_rejected": true,
+  "orphan_detail_rejected": true,
+  "duplicate_customer_rejected": true
+}
