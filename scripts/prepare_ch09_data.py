@@ -1,66 +1,110 @@
-"""Validate source relationships and prepare one row per order for Chapter 09."""
+"""Prepare validated Chapter09 regression input from the common project raw data.
+
+Run from the project root or any working directory:
+
+    python scripts/prepare_ch09_data.py
+
+Input:
+    data/raw/customers.csv
+    data/raw/products.csv
+    data/raw/orders.csv
+    data/raw/order_items.csv
+
+Output:
+    data/processed/customers_clean.csv
+    data/processed/products_clean.csv
+    data/processed/orders_clean.csv
+    data/processed/order_items_clean.csv
+
+Chapter05의 전용 오류 탐지 데이터(`practice/chapter05/data/raw`)는 사용하지 않습니다.
+Chapter09는 Chapter08에서 검증한 공통 프로젝트 데이터 흐름을 이어받습니다.
+"""
+
+from __future__ import annotations
+
 from pathlib import Path
-
-import numpy as np
-import pandas as pd
+import sys
 
 
-ROOT = Path(__file__).resolve().parents[1]
-RAW = ROOT / "data" / "raw"
-OUT = ROOT / "chapter09" / "data"
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.data_loader import load_sales_data  # noqa: E402
+from src.preprocessing import (  # noqa: E402
+    preprocess_sales_data,
+    save_processed_data,
+    validate_relationships,
+)
 
 
-def prepare():
-    orders = pd.read_csv(RAW / "orders.csv", encoding="utf-8-sig")
-    items = pd.read_csv(RAW / "order_items.csv", encoding="utf-8-sig")
-    customers = pd.read_csv(RAW / "customers.csv", encoding="utf-8-sig")
-    checks = {
-        "orders_pk_unique": orders.order_id.is_unique,
-        "items_pk_unique": items.order_item_id.is_unique,
-        "customers_pk_unique": customers.customer_id.is_unique,
-        "orders_keys_present": orders[["order_id", "customer_id"]].notna().all().all(),
-        "items_keys_present": items[["order_item_id", "order_id", "product_id"]].notna().all().all(),
-        "customers_key_present": customers.customer_id.notna().all(),
-        "all_orders_have_details": orders.order_id.isin(items.order_id).all(),
-        "items_fk_valid": items.order_id.isin(orders.order_id).all(),
-        "customers_fk_valid": orders.customer_id.isin(customers.customer_id).all(),
-        "line_inputs_present": items[["quantity", "unit_price"]].notna().all().all(),
-        "line_inputs_nonnegative": (items[["quantity", "unit_price"]] >= 0).all().all(),
-        "order_dates_valid": pd.to_datetime(orders.order_date, errors="coerce").notna().all(),
+RAW_DIR = PROJECT_ROOT / "data" / "raw"
+PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
+
+
+def prepare_ch09_data(
+    raw_dir: str | Path = RAW_DIR,
+    processed_dir: str | Path = PROCESSED_DIR,
+) -> dict[str, object]:
+    """Preprocess common raw data and fail if core FK relationships are broken."""
+    raw_data = load_sales_data(raw_dir)
+    import numpy as np
+    import pandas as pd
+    checks = []
+    for table, key in [("customers", "customer_id"), ("products", "product_id"),
+                       ("orders", "order_id"), ("order_items", "order_item_id")]:
+        frame = raw_data[table]
+        checks.append((f"{table}_pk", frame[key].notna().all() and frame[key].is_unique))
+    for child, fk, parent, pk in [("orders", "customer_id", "customers", "customer_id"),
+                                  ("order_items", "order_id", "orders", "order_id"),
+                                  ("order_items", "product_id", "products", "product_id")]:
+        checks.append((f"{child}_{fk}_fk", raw_data[child][fk].notna().all() and raw_data[child][fk].isin(raw_data[parent][pk]).all()))
+    checks.append(("every_order_has_detail", raw_data["orders"].order_id.isin(raw_data["order_items"].order_id).all()))
+    amounts = raw_data["order_items"][["quantity", "unit_price"]].apply(pd.to_numeric, errors="coerce")
+    checks.append(("amounts_finite_positive", np.isfinite(amounts).all().all() and amounts.gt(0).all().all()))
+    checks.append(("dates_valid", pd.to_datetime(raw_data["orders"].order_date, errors="coerce").notna().all()))
+    if not all(ok for _, ok in checks):
+        raise ValueError(f"Raw validation failed: {checks}")
+    processed_data = preprocess_sales_data(raw_data)
+    if any(len(raw_data[k]) != len(processed_data[k]) for k in raw_data):
+        raise ValueError("Preprocessing changed row counts; investigate before modeling")
+    report_dir = PROJECT_ROOT / "reports"
+    report_dir.mkdir(exist_ok=True)
+    pd.DataFrame([{"check": name, "status": "PASS" if ok else "FAIL"} for name, ok in checks]).to_csv(report_dir / "ch09_source_checks.csv", index=False)
+    relationship_checks = validate_relationships(processed_data)
+
+    if (
+        not relationship_checks.empty
+        and not relationship_checks["invalid_count"].eq(0).all()
+    ):
+        failed = relationship_checks.loc[
+            relationship_checks["invalid_count"].ne(0)
+        ]
+        raise ValueError(
+            "Chapter09 입력 관계 검증에 실패했습니다:\n"
+            + failed.to_string(index=False)
+        )
+
+    saved_paths = save_processed_data(processed_data, processed_dir)
+    return {
+        "raw_data": raw_data,
+        "processed_data": processed_data,
+        "relationship_checks": relationship_checks,
+        "saved_paths": saved_paths,
     }
-    if not all(checks.values()):
-        raise ValueError(f"Source data validation failed: {checks}")
 
-    items["line_total"] = items.quantity * items.unit_price
-    checks["line_total_formula"] = bool(np.allclose(items.line_total, items.quantity * items.unit_price))
-    totals = items.groupby("order_id", as_index=False).line_total.sum().rename(columns={"line_total": "order_total"})
-    checks["order_total_formula"] = bool(np.allclose(totals.order_total, items.groupby("order_id").line_total.sum().to_numpy()))
-    checks["orders_totals_one_to_one"] = totals.order_id.is_unique and orders.order_id.is_unique
-    checks["orders_customers_many_to_one"] = customers.customer_id.is_unique
-    if not all(checks.values()):
-        raise ValueError(f"Target validation failed: {checks}")
 
-    data = orders.merge(totals, on="order_id", how="left", validate="one_to_one", indicator=True)
-    if not data._merge.eq("both").all() or data.order_total.isna().any():
-        raise ValueError("Every order must have a detail-derived target")
-    data = data.drop(columns="_merge").merge(
-        customers[["customer_id", "gender", "age", "city"]],
-        on="customer_id", how="left", validate="many_to_one", indicator=True,
-    )
-    if not data._merge.eq("both").all():
-        raise ValueError("Every order must match exactly one customer")
-    data = data.drop(columns="_merge")
-    data["order_date"] = pd.to_datetime(data.order_date)
-    data["order_month"] = data.order_date.dt.month
-    data["order_dayofweek"] = data.order_date.dt.dayofweek
-    OUT.mkdir(parents=True, exist_ok=True)
-    data.to_csv(OUT / "ch09_order_level.csv", index=False)
-    pd.DataFrame({"check": list(checks), "result": ["PASS" if x else "FAIL" for x in checks.values()]}).to_csv(
-        OUT / "ch09_source_checks.csv", index=False
-    )
-    return data, checks
+def main() -> None:
+    result = prepare_ch09_data()
+
+    print("Chapter09 모델링 입력 준비 완료")
+    print(f"입력 Raw 경로: {RAW_DIR}")
+    print("\n[관계 검증]")
+    print(result["relationship_checks"].to_string(index=False))
+    print("\n[저장된 processed 파일]")
+    for path in result["saved_paths"]:
+        print(f"- {path}")
 
 
 if __name__ == "__main__":
-    data, checks = prepare()
-    print(f"Prepared {len(data)} orders; {len(checks)} source checks PASS")
+    main()

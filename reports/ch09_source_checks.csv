@@ -1,0 +1,11 @@
+check,status
+customers_pk,PASS
+products_pk,PASS
+orders_pk,PASS
+order_items_pk,PASS
+orders_customer_id_fk,PASS
+order_items_order_id_fk,PASS
+order_items_product_id_fk,PASS
+every_order_has_detail,PASS
+amounts_finite_positive,PASS
+dates_valid,PASS

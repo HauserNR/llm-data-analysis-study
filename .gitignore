@@ -3,3 +3,7 @@
 .ipynb_checkpoints/
 .omc/
 .venv/
+
+# Chapter09 local diagnostics (identifier-bearing)
+__pycache__/
+reports/ch09_regression_*_internal.csv
