@@ -1,0 +1,2 @@
+forbidden_feature_overlap,strict_train_before_test,selected_model_exists_in_train_cv,final_test_contains_baseline,final_test_contains_frozen_selected_model,test_rows_for_r2,source_checks
+0,PASS,PASS,PASS,PASS,PASS,PASS

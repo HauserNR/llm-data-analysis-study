@@ -1,0 +1,3 @@
+model,selected_model,test_rows,MAE,RMSE,R2,baseline_mae_improvement_pct
+Baseline Mean,Baseline Mean,33,397504.937010555,468456.2870136103,-0.03042293906027016,0.0
+Frozen Selected Model,Baseline Mean,33,397504.937010555,468456.2870136103,-0.03042293906027016,0.0
