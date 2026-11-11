@@ -1,0 +1,129 @@
+﻿template_section,requirement,notebook_cell_zero_based,status
+제출 정보,섹션 존재,0,PASS
+제출 정보,이름,0,PASS
+제출 정보,GitHub ID,0,PASS
+제출 정보,작성일,0,PASS
+제출 정보,최종 Notebook URL,0,PASS
+1. 예측 문제 정의,섹션 존재,0,PASS
+1. 예측 문제 정의,Target,0,PASS
+1. 예측 문제 정의,예측 단위,0,PASS
+1. 예측 문제 정의,예측 시점,0,PASS
+1. 예측 문제 정의,예측 시점에 알 수 있는 정보,0,PASS
+1. 예측 문제 정의,예측 시점에 알 수 없는 정보,0,PASS
+1. 예측 문제 정의,나의 해석과 판단,0,PASS
+2. Feature Leakage Audit,섹션 존재,2,PASS
+2. Feature Leakage Audit,표 항목: feature / 예측 시점 사용 가능 / Target 계산 재료 / 사후 정보/ID / 최종 사용 / 판단 이유,2,PASS
+2. Feature Leakage Audit,금지 feature overlap 개수,2,PASS
+2. Feature Leakage Audit,가장 위험하다고 판단한 feature,2,PASS
+2. Feature Leakage Audit,이유,2,PASS
+2. Feature Leakage Audit,images/step02_leakage.png,2,PASS
+3. Target 생성과 관계 검증,섹션 존재,5,PASS
+3. Target 생성과 관계 검증,계산 기준,5,PASS
+3. Target 생성과 관계 검증,line_total 검증 결과,5,PASS
+3. Target 생성과 관계 검증,orders ↔ target 관계 검증 결과,5,PASS
+3. Target 생성과 관계 검증,orders → customers 관계 검증 결과,5,PASS
+3. Target 생성과 관계 검증,나의 해석과 판단,5,PASS
+4. Train / Final Test 분할,섹션 존재,8,PASS
+4. Train / Final Test 분할,Train 시작일,8,PASS
+4. Train / Final Test 분할,Train 종료일,8,PASS
+4. Train / Final Test 분할,Train 행 수,8,PASS
+4. Train / Final Test 분할,Final Test 시작일,8,PASS
+4. Train / Final Test 분할,Final Test 종료일,8,PASS
+4. Train / Final Test 분할,Final Test 행 수,8,PASS
+4. Train / Final Test 분할,같은 달력 날짜 중복 여부,8,PASS
+4. Train / Final Test 분할,분할 판단,8,PASS
+4. Train / Final Test 분할,images/step04_split.png,8,PASS
+5. Train TimeSeriesSplit 후보 비교,섹션 존재,12,PASS
+5. Train TimeSeriesSplit 후보 비교,표 항목: 모델 / CV MAE 평균 / CV MAE 표준편차 / CV R² 평균 / 비고,12,PASS
+5. Train TimeSeriesSplit 후보 비교,표 항목: Baseline Mean,12,PASS
+5. Train TimeSeriesSplit 후보 비교,표 항목: Linear Regression,12,PASS
+5. Train TimeSeriesSplit 후보 비교,표 항목: Random Forest,12,PASS
+5. Train TimeSeriesSplit 후보 비교,Train CV로 선택한 비베이스라인 모델,12,PASS
+5. Train TimeSeriesSplit 후보 비교,Selected Model,12,PASS
+5. Train TimeSeriesSplit 후보 비교,선택 기준,12,PASS
+5. Train TimeSeriesSplit 후보 비교,Final Test 결과를 보기 전에 선택했는가,12,PASS
+5. Train TimeSeriesSplit 후보 비교,나의 해석과 판단,12,PASS
+6. Final Test: Baseline vs Frozen Model,섹션 존재,16,PASS
+6. Final Test: Baseline vs Frozen Model,표 항목: 모델 / selection role / Train MAE / Test MAE / Test RMSE / Test R² / Baseline 대비 MAE 개선율,16,PASS
+6. Final Test: Baseline vs Frozen Model,표 항목: Baseline Mean / baseline,16,PASS
+6. Final Test: Baseline vs Frozen Model,표 항목: Frozen Selected Model / selected_by_train_cv,16,PASS
+6. Final Test: Baseline vs Frozen Model,images/step06_final_metrics.png,16,PASS
+6. Final Test: Baseline vs Frozen Model,결과 관찰,16,PASS
+6. Final Test: Baseline vs Frozen Model,나의 해석과 판단,16,PASS
+6. Final Test: Baseline vs Frozen Model,Frozen Model이 baseline보다 실제로 개선되었는가?,16,PASS
+6. Final Test: Baseline vs Frozen Model,MAE와 RMSE 차이에서 무엇을 볼 수 있는가?,16,PASS
+6. Final Test: Baseline vs Frozen Model,R²는 어떻게 해석할 수 있는가?,16,PASS
+6. Final Test: Baseline vs Frozen Model,업무·분석적 의미,16,PASS
+7. 대표 오차 사례,섹션 존재,19,PASS
+7. 대표 오차 사례,사례 1,19,PASS
+7. 대표 오차 사례,실제값,19,PASS
+7. 대표 오차 사례,예측값,19,PASS
+7. 대표 오차 사례,residual,19,PASS
+7. 대표 오차 사례,absolute error,19,PASS
+7. 대표 오차 사례,관찰,19,PASS
+7. 대표 오차 사례,가능한 이유 후보,19,PASS
+7. 대표 오차 사례,추가 확인,19,PASS
+7. 대표 오차 사례,사례 2,19,PASS
+7. 대표 오차 사례,실제값,19,PASS
+7. 대표 오차 사례,예측값,19,PASS
+7. 대표 오차 사례,residual,19,PASS
+7. 대표 오차 사례,absolute error,19,PASS
+7. 대표 오차 사례,관찰,19,PASS
+7. 대표 오차 사례,가능한 이유 후보,19,PASS
+7. 대표 오차 사례,추가 확인,19,PASS
+8. Validation Evidence,섹션 존재,24,PASS
+8. Validation Evidence,표 항목: check / value / status,24,PASS
+8. Validation Evidence,표 항목: forbidden_feature_overlap,24,PASS
+8. Validation Evidence,표 항목: strict_train_before_test,24,PASS
+8. Validation Evidence,표 항목: selected_model_exists_in_train_cv,24,PASS
+8. Validation Evidence,표 항목: final_test_contains_baseline,24,PASS
+8. Validation Evidence,표 항목: final_test_contains_frozen_selected_model,24,PASS
+8. Validation Evidence,표 항목: test_rows_for_r2,24,PASS
+8. Validation Evidence,FAIL 항목,24,PASS
+8. Validation Evidence,없음 / 있음,24,PASS
+8. Validation Evidence,있다면 원인과 수정 내용,24,PASS
+9. Evidence와 공개 범위,섹션 존재,26,PASS
+9. Evidence와 공개 범위,생성된 Evidence,26,PASS
+9. Evidence와 공개 범위,`ch09_regression_split_summary.csv`,26,PASS
+9. Evidence와 공개 범위,`ch09_regression_feature_audit.csv`,26,PASS
+9. Evidence와 공개 범위,`ch09_regression_cv_summary.csv`,26,PASS
+9. Evidence와 공개 범위,`ch09_regression_model_comparison.csv`,26,PASS
+9. Evidence와 공개 범위,`ch09_regression_validation.csv`,26,PASS
+9. Evidence와 공개 범위,`ch09_regression_checklist.csv`,26,PASS
+9. Evidence와 공개 범위,Internal 파일,26,PASS
+9. Evidence와 공개 범위,`ch09_regression_model_data_internal.csv`,26,PASS
+9. Evidence와 공개 범위,`ch09_regression_predictions_internal.csv`,26,PASS
+9. Evidence와 공개 범위,공개 결과,26,PASS
+9. Evidence와 공개 범위,`ch09_regression_report.md`,26,PASS
+9. Evidence와 공개 범위,`ch09_actual_vs_predicted.png`,26,PASS
+9. Evidence와 공개 범위,`ch09_residual_histogram.png`,26,PASS
+9. Evidence와 공개 범위,공개 범위 판단,26,PASS
+10. 최종 사용 판단,섹션 존재,29,PASS
+10. 최종 사용 판단,현재 수준에서 참고용 사용 가능,29,PASS
+10. 최종 사용 판단,추가 검증 후 사용 가능,29,PASS
+10. 최종 사용 판단,현재 데이터로는 사용 보류,29,PASS
+10. 최종 사용 판단,판단 근거,29,PASS
+10. 최종 사용 판단,업무적 위험,29,PASS
+10. 최종 사용 판단,현재 데이터의 한계,29,PASS
+10. 최종 사용 판단,다음 개선 우선순위,29,PASS
+11. 전체 재실행 확인,섹션 존재,29,PASS
+11. 전체 재실행 확인,실행 성공 여부,29,PASS
+11. 전체 재실행 확인,Train CV Selected Model,29,PASS
+11. 전체 재실행 확인,Final Validation 전체 PASS 여부,29,PASS
+11. 전체 재실행 확인,Notebook 결과와 스크립트 결과의 일관성,29,PASS
+최종 체크,섹션 존재,31,PASS
+최종 체크,Target과 예측 시점을 정의했습니다.,31,PASS
+최종 체크,Leakage Audit을 수행했습니다.,31,PASS
+최종 체크,Target 계산과 관계 검증을 확인했습니다.,31,PASS
+최종 체크,Train과 Final Test가 시간 순서로 엄격히 분리되었습니다.,31,PASS
+최종 체크,전처리가 Pipeline 내부에서 학습됩니다.,31,PASS
+최종 체크,Train TimeSeriesSplit으로 후보를 비교했습니다.,31,PASS
+최종 체크,Final Test 전에 Selected Model을 고정했습니다.,31,PASS
+최종 체크,Final Test에서는 Baseline과 Frozen Model만 비교했습니다.,31,PASS
+최종 체크,"MAE, RMSE, R²를 함께 해석했습니다.",31,PASS
+최종 체크,대표 오차 사례를 관찰과 가설로 구분했습니다.,31,PASS
+최종 체크,Validation Evidence가 모두 PASS입니다.,31,PASS
+최종 체크,Internal 결과와 공개 결과를 구분했습니다.,31,PASS
+최종 체크,낮은 성능도 숨기지 않았습니다.,31,PASS
+최종 체크,전체 스크립트를 재실행했습니다.,31,PASS
+최종 체크,최종 Notebook URL을 제출합니다.,31,PENDING_LMS
