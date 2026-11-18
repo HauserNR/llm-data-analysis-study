@@ -7,3 +7,6 @@
 # Chapter09 local diagnostics (identifier-bearing)
 __pycache__/
 reports/ch09_regression_*_internal.csv
+
+# Chapter10 local diagnostics with source identifiers
+reports/ch10_*_internal.csv

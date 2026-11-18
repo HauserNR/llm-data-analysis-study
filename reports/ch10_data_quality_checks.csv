@@ -1,0 +1,12 @@
+﻿check_item,count,resolution
+binary_target_rows,248,validated
+completed_rows,184,validated
+cancelled_rows,64,validated
+excluded_status_rows,52,validated
+line_total_mismatch,0,validated
+negative_days_since_signup,34,원본 보존; signup_date·days_since_signup을 전체 Feature에서 제외
+missing_order_item_features,0,validated
+missing_customer_match,0,validated
+status_scope:completed,184,
+status_scope:cancelled,64,
+status_scope:refunded,52,

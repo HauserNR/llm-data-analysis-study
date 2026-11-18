@@ -1,0 +1,15 @@
+artifact,comparison,status
+ch10_target_distribution.csv,byte-for-byte,PASS
+ch10_feature_audit.csv,byte-for-byte,PASS
+ch10_merge_checks.csv,byte-for-byte,PASS
+ch10_data_quality_checks.csv,byte-for-byte,PASS
+ch10_split_summary.csv,byte-for-byte,PASS
+ch10_validation_model_comparison.csv,byte-for-byte,PASS
+ch10_validation_threshold_metrics.csv,byte-for-byte,PASS
+ch10_test_metrics.csv,byte-for-byte,PASS
+ch10_classification_predictions.csv,byte-for-byte,PASS
+ch10_confusion_matrix.csv,byte-for-byte,PASS
+ch10_classification_report.csv,byte-for-byte,PASS
+ch10_classification_validation.csv,byte-for-byte,PASS
+ch10_classification_checklist.csv,byte-for-byte,PASS
+ch10_classification_summary.md,byte-for-byte,PASS

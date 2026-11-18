@@ -1,0 +1,57 @@
+{
+  "repository": "GilbertMoon/llm-data-analysis-course",
+  "commit": "6105f42bd8294cb364dde6dcc2fee71c32e14794",
+  "checked_on": "2026-11-18",
+  "files": [
+    {
+      "path": "practice/chapter10/chapter10.md",
+      "url": "https://github.com/GilbertMoon/llm-data-analysis-course/blob/6105f42bd8294cb364dde6dcc2fee71c32e14794/practice/chapter10/chapter10.md",
+      "sha256": "43231f8ad14a6972f7483582093f1aceffe1adf3bb5205a62d3200a7964d212c"
+    },
+    {
+      "path": "notebooks/ch10_llm_code_generation.ipynb",
+      "url": "https://github.com/GilbertMoon/llm-data-analysis-course/blob/6105f42bd8294cb364dde6dcc2fee71c32e14794/notebooks/ch10_llm_code_generation.ipynb",
+      "sha256": "aa36c2660b58e9a4f73ed5359344e582d23cc3557e1f2756dd7f2873a60bc34d"
+    },
+    {
+      "path": "practice/chapter10/templates/chapter10_assignment.md",
+      "url": "https://github.com/GilbertMoon/llm-data-analysis-course/blob/6105f42bd8294cb364dde6dcc2fee71c32e14794/practice/chapter10/templates/chapter10_assignment.md",
+      "sha256": "e8bc711404abc7746e60ddae23510aa5390795b137afe1f4f54cb35b80f15b7b"
+    },
+    {
+      "path": "practice/SUBMISSION_GUIDE.md",
+      "url": "https://github.com/GilbertMoon/llm-data-analysis-course/blob/6105f42bd8294cb364dde6dcc2fee71c32e14794/practice/SUBMISSION_GUIDE.md",
+      "sha256": "72517c98d5988e1ba366af4bd4592739a008f70767ad86ca8c939ac73301eadb"
+    },
+    {
+      "path": "practice/CHAPTER_SUBMISSION_MATRIX.md",
+      "url": "https://github.com/GilbertMoon/llm-data-analysis-course/blob/6105f42bd8294cb364dde6dcc2fee71c32e14794/practice/CHAPTER_SUBMISSION_MATRIX.md",
+      "sha256": "6fdedf6deaa796ea172ece14c17026005c24eb608615fda96e766b5a39aac244"
+    },
+    {
+      "path": "src/classification.py",
+      "url": "https://github.com/GilbertMoon/llm-data-analysis-course/blob/6105f42bd8294cb364dde6dcc2fee71c32e14794/src/classification.py",
+      "sha256": "6c6e69bfa85d772163060222051f01c04acf9da17fadc83e95557410a5834b5d"
+    },
+    {
+      "path": "scripts/prepare_ch10_data.py",
+      "url": "https://github.com/GilbertMoon/llm-data-analysis-course/blob/6105f42bd8294cb364dde6dcc2fee71c32e14794/scripts/prepare_ch10_data.py",
+      "sha256": "302b08ef4dd2f62df02b3cfa74e2f680041ea1d8325331c19560bae58b1e44a7"
+    },
+    {
+      "path": "scripts/run_classification_analysis.py",
+      "url": "https://github.com/GilbertMoon/llm-data-analysis-course/blob/6105f42bd8294cb364dde6dcc2fee71c32e14794/scripts/run_classification_analysis.py",
+      "sha256": "982969fdc693ff72cb792e6e6b2f5dac7c866a02e8eed253d679e6eb29faf7e3"
+    },
+    {
+      "path": "scripts/generate_sample_data.py",
+      "url": "https://github.com/GilbertMoon/llm-data-analysis-course/blob/6105f42bd8294cb364dde6dcc2fee71c32e14794/scripts/generate_sample_data.py",
+      "sha256": "72bfa76d44b6f99cd220a01cd8bedb4ab2f1daf62deed564c90f880a8149f016"
+    },
+    {
+      "path": "src/preprocessing.py",
+      "url": "https://github.com/GilbertMoon/llm-data-analysis-course/blob/6105f42bd8294cb364dde6dcc2fee71c32e14794/src/preprocessing.py",
+      "sha256": "4695e23c80173651d9c1acc62cf6758bc827425f24d7f30b107fa6d3384afcde"
+    }
+  ]
+}

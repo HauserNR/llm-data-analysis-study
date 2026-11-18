@@ -1,0 +1,21 @@
+{
+  "model": "Logistic Regression",
+  "threshold": 0.2,
+  "features": [
+    "age",
+    "item_count",
+    "total_quantity",
+    "order_amount",
+    "order_month",
+    "order_dayofweek",
+    "gender",
+    "city",
+    "payment_method"
+  ],
+  "selected_on": "validation",
+  "model_rule": "F1 desc, recall desc, precision desc, name asc; exclude Dummy",
+  "threshold_rule": "F1 desc, recall desc, precision desc, threshold asc",
+  "random_state": 42,
+  "fitted_pipeline_sha256": "7c0362b4e66c57a5737235bc5217b25be0a83202dded7c4cb9b4f71e1a7a1549",
+  "refit_after_selection": false
+}

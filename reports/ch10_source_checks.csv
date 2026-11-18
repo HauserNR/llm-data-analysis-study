@@ -1,0 +1,25 @@
+check,value,status,resolution
+customers_primary_key,0,PASS,검증 통과
+customers_duplicate_rows,0,PASS,검증 통과
+products_primary_key,0,PASS,검증 통과
+products_duplicate_rows,0,PASS,검증 통과
+orders_primary_key,0,PASS,검증 통과
+orders_duplicate_rows,0,PASS,검증 통과
+order_items_primary_key,0,PASS,검증 통과
+order_items_duplicate_rows,0,PASS,검증 통과
+orders_customer_id_foreign_key,0,PASS,검증 통과
+order_items_order_id_foreign_key,0,PASS,검증 통과
+order_items_product_id_foreign_key,0,PASS,검증 통과
+every_order_has_detail,0,PASS,검증 통과
+finite_positive_quantity_price,0,PASS,검증 통과
+orders_required_missing,0,PASS,검증 통과
+customers_required_missing,0,PASS,검증 통과
+order_items_required_missing,0,PASS,검증 통과
+orders_order_date_parse,0,PASS,검증 통과
+customers_signup_date_parse,0,PASS,검증 통과
+customers_row_count_preserved,150,PASS,검증 통과
+products_row_count_preserved,100,PASS,검증 통과
+orders_row_count_preserved,300,PASS,검증 통과
+order_items_row_count_preserved,764,PASS,검증 통과
+processed_line_total_mismatch,0,PASS,검증 통과
+signup_after_order_all_statuses,48,WARN,가상 데이터 생성기의 날짜 독립 추출. 원본·주문 보존; signup_date/days_since_signup 전체 입력 제외

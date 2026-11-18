@@ -1,0 +1,13 @@
+check,status
+nbformat schema,PASS
+12 executed cells in order,PASS
+no cell errors,PASS
+4 valid embedded PNG outputs,PASS
+4 valid saved PNG files,PASS
+public prediction allowlist,PASS
+prediction threshold formula,PASS
+metrics recomputed from public predictions,PASS
+confusion matrix recomputed,PASS
+10 automatic validation checks,PASS
+14 public artifacts identical on replay,PASS
+HTML rendered with 4 embedded images,PASS

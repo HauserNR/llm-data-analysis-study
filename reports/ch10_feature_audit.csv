@@ -1,0 +1,21 @@
+﻿column,selected,role,reason
+age,True,allowed_feature,교육용 예측 시점에 사용 가능하다고 가정
+item_count,True,allowed_feature,교육용 예측 시점에 사용 가능하다고 가정
+total_quantity,True,allowed_feature,교육용 예측 시점에 사용 가능하다고 가정
+order_amount,True,allowed_feature,교육용 예측 시점에 사용 가능하다고 가정
+order_month,True,allowed_feature,교육용 예측 시점에 사용 가능하다고 가정
+order_dayofweek,True,allowed_feature,교육용 예측 시점에 사용 가능하다고 가정
+gender,True,allowed_feature,교육용 예측 시점에 사용 가능하다고 가정
+city,True,allowed_feature,교육용 예측 시점에 사용 가능하다고 가정
+payment_method,True,allowed_feature,교육용 예측 시점에 사용 가능하다고 가정
+cancel_reason,False,forbidden,취소 이후 생성되는 사후 정보
+cancelled_at,False,forbidden,취소 이후 생성되는 사후 정보
+customer_id,False,forbidden,고객 식별자
+days_since_signup,False,forbidden,가입일이 주문일보다 늦은 원본 오류: 전체 표본에서 사용 제외
+is_cancelled,False,forbidden,예측 대상 자체
+name,False,forbidden,개인 식별 정보
+order_id,False,forbidden,주문 식별자
+order_status,False,forbidden,예측 결과와 직접 연결되는 주문 상태
+product_id,False,forbidden,주문 상세 식별 정보
+signup_date,False,forbidden,시간 정합성 미확인: 경과일 계산 및 모델 입력에서 제외
+source_index,False,forbidden,내부 행 추적자

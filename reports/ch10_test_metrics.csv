@@ -1,0 +1,2 @@
+﻿model,evaluation_split,threshold,selection_status,accuracy,precision,recall,f1
+Logistic Regression,test_final,0.2,frozen_before_test,0.34,0.2727272727272727,0.9230769230769231,0.42105263157894735
