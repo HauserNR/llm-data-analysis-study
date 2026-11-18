@@ -1,0 +1,41 @@
+reports/ch10_classification_report.csv
+  s_1c4fcd10293410::t_3c68e6bb65cf00 2-5
+chapter10/reports/submission_audit.md
+  s_1c4fcd10293410::t_6c6e19c75f98d4 1-42
+reports/ch10_classification_summary.md
+  s_1c4fcd10293410::t_3c68e6bb65cf00 124-138
+chapter10/chapter10.ipynb
+  s_1c4fcd10293410::t_70730b4056a98d 1382,1594,2284,2640,2664,3125,3613-3615,3632,3657
+  s_1c4fcd10293410::t_3c68e6bb65cf00 60-63,585-588,766-769,1278-1281,1403-1406,1607-1610,1858-1861,2295-2298,2445,2453,2461,2464,2469,2477-2480,2688-2691,2839-2842,3138-3141,3378,3392,3399,3420,3422-3423,3514,3520,3526,3532,3538,3550,3586-3590,3592,3715-3718
+chapter10/reports/ch10_human_review.csv
+  s_1c4fcd10293410::t_70730b4056a98d 8-12,14
+chapter10/README.md
+  s_1c4fcd10293410::t_70730b4056a98d 25
+chapter10/reports/template_audit.csv
+  s_1c4fcd10293410::t_70730b4056a98d 7-8,11-12
+src/classification.py
+  s_1c4fcd10293410::t_c321913710b3d5 922-931,983-986,1003-1018,1474-1475
+  s_1c4fcd10293410::t_fa244b3ee9df48 1476
+reports/ch10_classification_checklist.csv
+  s_1c4fcd10293410::t_3c68e6bb65cf00 1-15
+chapter10/reports/guideline_audit.md
+  s_1c4fcd10293410::t_70730b4056a98d 11-14,16-17
+chapter10/reports/ch10_notebook_checks.csv
+  s_1c4fcd10293410::t_9b063efc5ea3ab 14-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "758e09b07237eb14a34f15a8793def8392941d23",
+  "prompts": {},
+  "sessions": {
+    "s_1c4fcd10293410": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1ede7-3221-7860-898a-1170be3fca5c",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
