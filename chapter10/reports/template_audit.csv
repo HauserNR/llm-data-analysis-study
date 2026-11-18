@@ -4,12 +4,12 @@ template_section,status,missing,evidence
 2. Feature Contract와 Leakage Audit,PASS,,chapter10.ipynb 해당 Markdown/실행 셀
 3. 주문 단위 특징과 병합 검증,PASS,,chapter10.ipynb 해당 Markdown/실행 셀
 4. 클래스 비율,PASS,,chapter10.ipynb 해당 Markdown/실행 셀
-5. Dummy Baseline과 Validation 모델 비교,PASS,,chapter10.ipynb 해당 Markdown/실행 셀
-6. Train / Validation / Test 역할,PASS,,chapter10.ipynb 해당 Markdown/실행 셀
+5. Dummy Baseline과 Validation 모델 비교,PASS,,chapter10.ipynb 6절의 동일 주제 답안/실행 셀
+6. Train / Validation / Test 역할,PASS,,chapter10.ipynb 5절의 동일 주제 답안/실행 셀
 7. Validation 성능과 우선 지표,PASS,,chapter10.ipynb 해당 Markdown/실행 셀
 8. Threshold 비교,PASS,,chapter10.ipynb 해당 Markdown/실행 셀
-9. FP/FN 해석,PASS,,chapter10.ipynb 해당 Markdown/실행 셀
-10. Final Test,PASS,,chapter10.ipynb 해당 Markdown/실행 셀
+9. FP/FN 해석,PASS,,chapter10.ipynb 10절의 동일 주제 답안/실행 셀
+10. Final Test,PASS,,chapter10.ipynb 9절의 동일 주제 답안/실행 셀
 11. Internal / Public 결과 구분,PASS,,chapter10.ipynb 해당 Markdown/실행 셀
 12. Validation Evidence,PASS,,chapter10.ipynb 해당 Markdown/실행 셀
 13. 최종 사용 판단,PASS,,chapter10.ipynb 해당 Markdown/실행 셀

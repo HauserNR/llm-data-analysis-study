@@ -919,7 +919,16 @@ def classification_report_dataframe(
         zero_division=0,
         output_dict=True,
     )
-    return pd.DataFrame(report).T.reset_index().rename(columns={"index": "label"})
+    # Overall accuracy is a scalar, not a per-class metric dictionary.
+    # Keep it in test_metrics; otherwise pandas broadcasts it into support.
+    rows = [
+        {"label": label, **metrics}
+        for label, metrics in report.items()
+        if isinstance(metrics, dict)
+    ]
+    frame = pd.DataFrame(rows)
+    frame["support"] = frame["support"].astype(int)
+    return frame
 
 
 def create_prediction_result(
@@ -971,8 +980,10 @@ def public_prediction_result(prediction_result: pd.DataFrame) -> pd.DataFrame:
     return prediction_result[public_columns].copy()
 
 
-def build_classification_checklist() -> pd.DataFrame:
-    """Return the human-review checklist for classification and LLM code."""
+def build_classification_checklist(
+    review_path: str | Path | None = None,
+) -> pd.DataFrame:
+    """Return a blank checklist or an explicitly supplied review record."""
     items = [
         "completed와 cancelled만 사용해 이진 타깃을 만들었는가?",
         "refunded 등 다른 상태를 0 클래스에 섞지 않았는가?",
@@ -989,7 +1000,22 @@ def build_classification_checklist() -> pd.DataFrame:
         "random split의 교육용 한계를 기록했는가?",
         "모델 결과를 취소 원인으로 단정하지 않았는가?",
     ]
-    return pd.DataFrame({"check_item": items, "status": ["□"] * len(items)})
+    template = pd.DataFrame({"check_item": items, "status": ["□"] * len(items)})
+    if review_path is None:
+        return template
+    reviewed = pd.read_csv(review_path)
+    required = {"check_item", "status", "evidence_section"}
+    if not required.issubset(reviewed.columns):
+        raise ValueError("검토 기록에 질문·상태·근거 절이 모두 필요합니다.")
+    if (
+        reviewed["check_item"].duplicated().any()
+        or set(reviewed["check_item"]) != set(items)
+        or not reviewed["status"].eq("REVIEWED").all()
+        or reviewed["evidence_section"].isna().any()
+        or reviewed["evidence_section"].astype(str).str.strip().eq("").any()
+    ):
+        raise ValueError("검토 기록의 항목·상태·근거를 확인해야 합니다.")
+    return reviewed.set_index("check_item").loc[items].reset_index()
 
 
 def build_classification_validation(
@@ -1445,7 +1471,9 @@ def run_classification_analysis(
         prediction_result_public=prediction_result_public,
         test_metrics=test_metrics,
     )
-    checklist = build_classification_checklist()
+    checklist = build_classification_checklist(
+        Path(__file__).resolve().parents[1] / "chapter10/reports/ch10_human_review.csv"
+    )
 
     output_paths = save_classification_outputs(
         model_data=model_data,

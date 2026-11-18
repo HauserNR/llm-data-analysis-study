@@ -11,3 +11,7 @@ confusion matrix recomputed,PASS
 10 automatic validation checks,PASS
 14 public artifacts identical on replay,PASS
 HTML rendered with 4 embedded images,PASS
+classification report integer support counts,PASS
+published checklist matches reviewed evidence,PASS
+13 answer sections in numerical order,PASS
+15 frozen decision artifacts unchanged after display corrections,PASS

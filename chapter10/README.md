@@ -22,7 +22,7 @@ Test는 Accuracy 0.34, Precision 0.2727, Recall 0.9231, F1 0.4211, TN5/FP32/FN1/
 
 `reports/ch10_*_internal.csv`는 식별자 추적용 로컬 산출물로 gitignore 처리했다. 공개 Prediction은 `record_id`, `actual_is_cancelled`, `predicted_is_cancelled`, `cancel_probability`, `model`, `threshold` 여섯 열만 사용한다. 그림 4개는 Notebook Output에 포함되며 `images/`에도 저장한다.
 
-공식 자료의 커밋·파일 해시는 [source_manifest.json](reports/source_manifest.json)에, 템플릿 대응은 [template_audit.csv](reports/template_audit.csv)에 기록한다. 자동 분류 계약 검사와 사람 검토를 구분한다. 공식 사람 검토 양식의 빈 체크는 자동 PASS로 바꾸지 않고 별도 [ch10_human_review.csv](reports/ch10_human_review.csv)에 근거 절을 기록했다.
+공식 자료의 커밋·파일 해시는 [source_manifest.json](reports/source_manifest.json)에, 템플릿 대응은 [template_audit.csv](reports/template_audit.csv)에 기록한다. 자동 분류 계약 검사와 사람 검토를 구분한다. [ch10_human_review.csv](reports/ch10_human_review.csv)에 기록한 14개 검토 항목과 근거 절을 공개 체크리스트·요약 보고서에도 반영한다. REVIEWED는 답안 근거를 확인한 상태이며 자동 Validation의 PASS와 구분한다.
 
 2026-11-18 Notebook·이미지·코드·공개 산출물을 GitHub `main`에 커밋·푸시했다. 로그인하지 않은 공개 GitHub Preview에서 답안·표 39개·그래프 4개의 실제 로드와 크기를 확인했고, 원격 Notebook·이미지 4개의 바이트가 로컬 파일과 일치함도 확인했다. 근거는 [github_rendering_checks.json](reports/github_rendering_checks.json)에 기록한다. GitHub Notebook에서 체크 상태가 보이도록 ☑/☐ 기호를 사용한다. LMS 제출은 아직 수행하지 않았으며 사용자가 아래 최종 파일 URL을 제출하면 된다.
 

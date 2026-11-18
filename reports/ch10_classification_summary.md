@@ -121,21 +121,21 @@ required_feature_quality_and_date_mitigation   True   PASS
 
 ## 12. 사람 검토 체크리스트
 ```text
-                                        check_item status
-           completed와 cancelled만 사용해 이진 타깃을 만들었는가?      □
-                 refunded 등 다른 상태를 0 클래스에 섞지 않았는가?      □
-                 예측 시점과 feature 가용성 가정을 설명할 수 있는가?      □
-        line_total = quantity × unit_price를 검증했는가?      □
-                 병합에 validate를 사용하고 미매칭 0건을 확인했는가?      □
- order_status, target, ID, 사후 정보를 feature에서 제외했는가?      □
-                   train, validation, test를 분리했는가?      □
-                모델과 threshold는 validation에서 선택했는가?      □
-            모델과 threshold를 고정한 뒤 test를 한 번만 사용했는가?      □
-                               Dummy 기준 모델과 비교했는가?      □
-accuracy 외 precision, recall, F1과 FP/FN을 함께 확인했는가?      □
-      공개 prediction에서 내부 source index와 식별자를 제거했는가?      □
-                      random split의 교육용 한계를 기록했는가?      □
-                         모델 결과를 취소 원인으로 단정하지 않았는가?      □
+                                        check_item   status evidence_section
+           completed와 cancelled만 사용해 이진 타깃을 만들었는가? REVIEWED                1
+                 refunded 등 다른 상태를 0 클래스에 섞지 않았는가? REVIEWED                1
+                 예측 시점과 feature 가용성 가정을 설명할 수 있는가? REVIEWED                2
+        line_total = quantity × unit_price를 검증했는가? REVIEWED                3
+                 병합에 validate를 사용하고 미매칭 0건을 확인했는가? REVIEWED                3
+ order_status, target, ID, 사후 정보를 feature에서 제외했는가? REVIEWED                2
+                   train, validation, test를 분리했는가? REVIEWED                5
+                모델과 threshold는 validation에서 선택했는가? REVIEWED              6/8
+            모델과 threshold를 고정한 뒤 test를 한 번만 사용했는가? REVIEWED              8/9
+                               Dummy 기준 모델과 비교했는가? REVIEWED                6
+accuracy 외 precision, recall, F1과 FP/FN을 함께 확인했는가? REVIEWED           7/10/9
+      공개 prediction에서 내부 source index와 식별자를 제거했는가? REVIEWED               11
+                      random split의 교육용 한계를 기록했는가? REVIEWED             5/13
+                         모델 결과를 취소 원인으로 단정하지 않았는가? REVIEWED               13
 ```
 
 ## 13. 해석 시 주의사항
