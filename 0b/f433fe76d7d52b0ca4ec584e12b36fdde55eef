@@ -1,0 +1,26 @@
+chapter10/README.md
+  s_1c4fcd10293410::t_173521b3c4adc5 27
+chapter10/chapter10.ipynb
+  s_1c4fcd10293410::t_173521b3c4adc5 4179-4180,4182
+chapter10/reports/guideline_audit.md
+  s_1c4fcd10293410::t_173521b3c4adc5 25
+chapter10/reports/github_rendering_checks.json
+  s_1c4fcd10293410::t_8e22299612d59e 1-37,72
+  s_1c4fcd10293410::t_173521b3c4adc5 38-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "0bf433fe76d7d52b0ca4ec584e12b36fdde55eef",
+  "prompts": {},
+  "sessions": {
+    "s_1c4fcd10293410": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1ede7-3221-7860-898a-1170be3fca5c",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
