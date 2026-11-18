@@ -24,6 +24,6 @@ Test는 Accuracy 0.34, Precision 0.2727, Recall 0.9231, F1 0.4211, TN5/FP32/FN1/
 
 공식 자료의 커밋·파일 해시는 [source_manifest.json](reports/source_manifest.json)에, 템플릿 대응은 [template_audit.csv](reports/template_audit.csv)에 기록한다. 자동 분류 계약 검사와 사람 검토를 구분한다. 공식 사람 검토 양식의 빈 체크는 자동 PASS로 바꾸지 않고 별도 [ch10_human_review.csv](reports/ch10_human_review.csv)에 근거 절을 기록했다.
 
-GitHub 업로드·원격 렌더링 확인·LMS 제출은 이 로컬 생성 작업에서 수행하지 않았다. 업로드할 때 Notebook과 함께 `images/`, `chapter10/reports/`, 공통 `reports/ch10_*` 공개 산출물, 새 `src/classification.py`와 두 실행 스크립트 및 `.gitignore`를 포함해야 재현된다.
+2026-11-18 Notebook·이미지·코드·공개 산출물을 GitHub `main`에 커밋·푸시했다. 로그인하지 않은 공개 GitHub Preview에서 답안·표 39개·그래프 4개의 실제 로드와 크기를 확인했고, 원격 Notebook·이미지 4개의 바이트가 로컬 파일과 일치함도 확인했다. 근거는 [github_rendering_checks.json](reports/github_rendering_checks.json)에 기록한다. GitHub Notebook에서 체크 상태가 보이도록 ☑/☐ 기호를 사용한다. LMS 제출은 아직 수행하지 않았으며 사용자가 아래 최종 파일 URL을 제출하면 된다.
 
 최종 제출 대상 URL: https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter10/chapter10.ipynb

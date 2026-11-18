@@ -1,0 +1,72 @@
+{
+  "checked_on": "2026-11-18",
+  "notebook_url": "https://github.com/HauserNR/llm-data-analysis-study/blob/main/chapter10/chapter10.ipynb",
+  "verified_commit": "e7126777322a25da31d3b38072fb6863ada04988",
+  "check_type": "Live GitHub notebook preview and its renderer, logged out",
+  "url": "https://notebooks.githubusercontent.com/view/ipynb?browser=chrome&bypass_fastly=true&color_mode=auto&commit=e7126777322a25da31d3b38072fb6863ada04988&device=unknown_device&docs_host=https%3A%2F%2Fdocs.github.com&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f4861757365724e522f6c6c6d2d646174612d616e616c797369732d73747564792f653731323637373733323261323564613331643362333830373266623638363361646130343938382f6368617074657231302f6368617074657231302e6970796e62&logged_in=false&nwo=HauserNR%2Fllm-data-analysis-study&path=chapter10%2Fchapter10.ipynb&platform=mac&repository_id=1352191626&repository_type=Repository&version=158#415d5ddf-3da4-4af2-a6d0-931010a087f4",
+  "headingCount": 37,
+  "tableCount": 39,
+  "images": [
+    {
+      "number": 1,
+      "complete": true,
+      "width": 638,
+      "height": 384
+    },
+    {
+      "number": 2,
+      "complete": true,
+      "width": 761,
+      "height": 445
+    },
+    {
+      "number": 3,
+      "complete": true,
+      "width": 1199,
+      "height": 429
+    },
+    {
+      "number": 4,
+      "complete": true,
+      "width": 538,
+      "height": 431
+    }
+  ],
+  "finalJudgmentVisible": true,
+  "validationVisible": true,
+  "lastExecutedCellVisible": true,
+  "status": "PASS",
+  "remote_file_checks": [
+    {
+      "path": "chapter10/chapter10.ipynb",
+      "http_status": 200,
+      "sha256": "21647d59ef77c3e32107458faa6cc818d6096b3238225a7fd8eed33cff66f3f3",
+      "matches_local": true
+    },
+    {
+      "path": "chapter10/images/step02_class_ratio.png",
+      "http_status": 200,
+      "sha256": "4df61a9649792fb72ddd5a84e54f74b873e2e604a6c85b883151cebcb4e4e928",
+      "matches_local": true
+    },
+    {
+      "path": "chapter10/images/step03_baseline.png",
+      "http_status": 200,
+      "sha256": "b7c8c2221e21d6c6ee2271da6e626f658cc3121867984189b2a81fa3c8c90c47",
+      "matches_local": true
+    },
+    {
+      "path": "chapter10/images/step05_threshold.png",
+      "http_status": 200,
+      "sha256": "79831822f0537430c7bd72cb9e6182c7a84a0c3bedcb16e2984ca378c82f2480",
+      "matches_local": true
+    },
+    {
+      "path": "chapter10/images/step06_confusion_matrix.png",
+      "http_status": 200,
+      "sha256": "9da68985301592d85d20f2802e04c8eabc5adde338e88c2468e0e90c40b89e65",
+      "matches_local": true
+    }
+  ],
+  "scope_note": "이 커밋에서 실제 렌더링과 원격 파일을 검증한 뒤, 최종 체크·README에 확인 완료를 반영했다. 실행 코드와 Output 및 이미지에는 변경이 없다."
+}
