@@ -1,0 +1,20 @@
+chapter10/chapter10.ipynb
+  s_1c4fcd10293410::t_556e430d01b9e7 8,16-17,25,27,35,43-45,47-49,51,757,1384,1392,1596,1598,1812,1820,1830,1837,1849,2272,2274,2276,2284,2286,2665,2684,2688,2826,3136,3667,3677,3699,3709,3716,4137,4171,4174
+  s_1c4fcd10293410::t_368aaf14705942 4172
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3963d5b87c5aebf10217748991f22b66a289451e",
+  "prompts": {},
+  "sessions": {
+    "s_1c4fcd10293410": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1ede7-3221-7860-898a-1170be3fca5c",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "nuri.song <nuri.song@lge.com>"
+    }
+  }
+}
